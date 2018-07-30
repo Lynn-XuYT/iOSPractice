@@ -16,6 +16,9 @@
     if (self)
     {
         self.indexDisplayMode = UIScrollViewIndexDisplayModeAlwaysHidden;
+        self.showsVerticalScrollIndicator = NO;
+        self.showsHorizontalScrollIndicator = NO;
+        self.backgroundColor = [UIColor colorWithRed:233/255.0 green:233/255.0 blue:233/255.0 alpha:1];
     }
     return self;
 }
@@ -33,7 +36,7 @@
         UIViewController *vc = dataSource[i];
         UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(width * i, 0, width, height)];
         [btn1 setTitle:vc.title forState:UIControlStateNormal];
-        btn1.backgroundColor = [UIColor greenColor];
+        [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         btn1.tag = i;
         [btn1 addTarget:self action:@selector(btnSelected:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn1];
