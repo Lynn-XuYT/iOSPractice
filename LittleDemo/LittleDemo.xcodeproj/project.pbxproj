@@ -12,7 +12,6 @@
 		BA189E962058F74700F6347A /* DLMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E942058F74700F6347A /* DLMainTabBarViewController.m */; };
 		BA189E992058F76500F6347A /* DLTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E982058F76500F6347A /* DLTabBarView.m */; };
 		BA189E9C2058F78300F6347A /* DLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E9B2058F78300F6347A /* DLTabBarItem.m */; };
-		BA189E9F20591FFC00F6347A /* PDMidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E9E20591FFC00F6347A /* PDMidViewController.m */; };
 		BA189ED8205A4E4C00F6347A /* DLScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189ED7205A4E4C00F6347A /* DLScrollViewController.m */; };
 		BA189EF9205A4E5700F6347A /* DLSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189EDB205A4E5700F6347A /* DLSocketManager.m */; };
 		BA189EFA205A4E5700F6347A /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = BA189EDD205A4E5700F6347A /* Documentation.html */; };
@@ -45,6 +44,10 @@
 		BACDBCC92058C60B008A4CCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACDBCC82058C60B008A4CCC /* UIKit.framework */; };
 		BADBAB49207DF11D0078E103 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BADBAB47207DF11C0078E103 /* Reachability.m */; };
 		BAE949EE205671EC00625AF6 /* DLBaseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAE949ED205671EC00625AF6 /* DLBaseViewController.mm */; };
+		BAF02994210EE8D800BC626B /* PDMidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF02992210EE8D800BC626B /* PDMidViewController.m */; };
+		BAF02998210EE9D900BC626B /* LDMyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF02997210EE9D900BC626B /* LDMyClass.m */; };
+		BAF0299B210EE9FA00BC626B /* LDMyClass+Category1.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF0299A210EE9FA00BC626B /* LDMyClass+Category1.m */; };
+		BAF0299E210EEA0500BC626B /* LDMyClass+Category2.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF0299D210EEA0500BC626B /* LDMyClass+Category2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +78,6 @@
 		BA189E982058F76500F6347A /* DLTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTabBarView.m; sourceTree = "<group>"; };
 		BA189E9A2058F78300F6347A /* DLTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTabBarItem.h; sourceTree = "<group>"; };
 		BA189E9B2058F78300F6347A /* DLTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTabBarItem.m; sourceTree = "<group>"; };
-		BA189E9D20591FFC00F6347A /* PDMidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDMidViewController.h; sourceTree = "<group>"; };
-		BA189E9E20591FFC00F6347A /* PDMidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDMidViewController.m; sourceTree = "<group>"; };
 		BA189ED6205A4E4C00F6347A /* DLScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLScrollViewController.h; sourceTree = "<group>"; };
 		BA189ED7205A4E4C00F6347A /* DLScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLScrollViewController.m; sourceTree = "<group>"; };
 		BA189EDB205A4E5700F6347A /* DLSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSocketManager.m; sourceTree = "<group>"; };
@@ -140,6 +141,14 @@
 		BADBAB48207DF11C0078E103 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		BAE949EC205671EC00625AF6 /* DLBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLBaseViewController.h; sourceTree = "<group>"; };
 		BAE949ED205671EC00625AF6 /* DLBaseViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DLBaseViewController.mm; sourceTree = "<group>"; };
+		BAF02992210EE8D800BC626B /* PDMidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDMidViewController.m; sourceTree = "<group>"; };
+		BAF02993210EE8D800BC626B /* PDMidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDMidViewController.h; sourceTree = "<group>"; };
+		BAF02996210EE9D900BC626B /* LDMyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDMyClass.h; sourceTree = "<group>"; };
+		BAF02997210EE9D900BC626B /* LDMyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDMyClass.m; sourceTree = "<group>"; };
+		BAF02999210EE9FA00BC626B /* LDMyClass+Category1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LDMyClass+Category1.h"; sourceTree = "<group>"; };
+		BAF0299A210EE9FA00BC626B /* LDMyClass+Category1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LDMyClass+Category1.m"; sourceTree = "<group>"; };
+		BAF0299C210EEA0500BC626B /* LDMyClass+Category2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LDMyClass+Category2.h"; sourceTree = "<group>"; };
+		BAF0299D210EEA0500BC626B /* LDMyClass+Category2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LDMyClass+Category2.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +353,7 @@
 		BA8AC3BF2050ECE0001F65B1 /* LittleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BAF02991210EE8D800BC626B /* TabMid */,
 				BADBAB46207DF11C0078E103 /* ReachabilityTest */,
 				BA03F373205F6292009D3CAB /* FPS */,
 				BA189F21205A501100F6347A /* TabSocket */,
@@ -360,8 +370,6 @@
 				BA8AC3CF2050ECE2001F65B1 /* main.m */,
 				BAE949EC205671EC00625AF6 /* DLBaseViewController.h */,
 				BAE949ED205671EC00625AF6 /* DLBaseViewController.mm */,
-				BA189E9D20591FFC00F6347A /* PDMidViewController.h */,
-				BA189E9E20591FFC00F6347A /* PDMidViewController.m */,
 			);
 			path = LittleDemo;
 			sourceTree = "<group>";
@@ -399,6 +407,29 @@
 				BADBAB48207DF11C0078E103 /* Reachability.h */,
 			);
 			path = ReachabilityTest;
+			sourceTree = "<group>";
+		};
+		BAF02991210EE8D800BC626B /* TabMid */ = {
+			isa = PBXGroup;
+			children = (
+				BAF02995210EE98700BC626B /* CategoryTest */,
+				BAF02992210EE8D800BC626B /* PDMidViewController.m */,
+				BAF02993210EE8D800BC626B /* PDMidViewController.h */,
+			);
+			path = TabMid;
+			sourceTree = "<group>";
+		};
+		BAF02995210EE98700BC626B /* CategoryTest */ = {
+			isa = PBXGroup;
+			children = (
+				BAF02996210EE9D900BC626B /* LDMyClass.h */,
+				BAF02997210EE9D900BC626B /* LDMyClass.m */,
+				BAF02999210EE9FA00BC626B /* LDMyClass+Category1.h */,
+				BAF0299A210EE9FA00BC626B /* LDMyClass+Category1.m */,
+				BAF0299C210EEA0500BC626B /* LDMyClass+Category2.h */,
+				BAF0299D210EEA0500BC626B /* LDMyClass+Category2.m */,
+			);
+			path = CategoryTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -552,6 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA03F376205F62AE009D3CAB /* FPSDisplay.m in Sources */,
+				BAF0299E210EEA0500BC626B /* LDMyClass+Category2.m in Sources */,
 				BA189F1F205A4F6700F6347A /* ViewController.m in Sources */,
 				BA189ED8205A4E4C00F6347A /* DLScrollViewController.m in Sources */,
 				BA189F1D205A4F6700F6347A /* LDCommonCell.m in Sources */,
@@ -560,10 +592,10 @@
 				BA189EFD205A4E5700F6347A /* DDTTYLogger.m in Sources */,
 				BA189E9C2058F78300F6347A /* DLTabBarItem.m in Sources */,
 				BA189EFC205A4E5700F6347A /* GCDAsyncSocket.m in Sources */,
-				BA189E9F20591FFC00F6347A /* PDMidViewController.m in Sources */,
 				BA189EFF205A4E5700F6347A /* DDContextFilterLogFormatter.m in Sources */,
 				BA189EF9205A4E5700F6347A /* DLSocketManager.m in Sources */,
 				BAE949EE205671EC00625AF6 /* DLBaseViewController.mm in Sources */,
+				BAF02998210EE9D900BC626B /* LDMyClass.m in Sources */,
 				BA189F01205A4E5700F6347A /* DDMultiFormatter.m in Sources */,
 				BA03F371205CF64E009D3CAB /* DLToolMenu.m in Sources */,
 				BA5F1E7D20B7BCD600C53292 /* DLGCDAnsySocketViewController.m in Sources */,
@@ -573,6 +605,7 @@
 				BA189F03205A4E5700F6347A /* DDLog.m in Sources */,
 				BA189F20205A4F6700F6347A /* LDDownloadAndUploadViewController.m in Sources */,
 				BA5F1E8020B7BCEB00C53292 /* DLStreamViewController.m in Sources */,
+				BAF0299B210EE9FA00BC626B /* LDMyClass+Category1.m in Sources */,
 				BA8AC3D02050ECE2001F65B1 /* main.m in Sources */,
 				BA189E992058F76500F6347A /* DLTabBarView.m in Sources */,
 				BA189EFB205A4E5700F6347A /* GCDAsyncUdpSocket.m in Sources */,
@@ -581,6 +614,7 @@
 				BA189F04205A4E5700F6347A /* DDAbstractDatabaseLogger.m in Sources */,
 				BADBAB49207DF11D0078E103 /* Reachability.m in Sources */,
 				BA8AC3C22050ECE0001F65B1 /* AppDelegate.m in Sources */,
+				BAF02994210EE8D800BC626B /* PDMidViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,6 +797,8 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				a = "";
+				b = "";
 			};
 			name = Debug;
 		};
@@ -783,6 +819,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				a = "";
+				b = "";
 			};
 			name = Release;
 		};

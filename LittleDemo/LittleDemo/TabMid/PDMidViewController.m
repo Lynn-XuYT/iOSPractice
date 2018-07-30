@@ -7,8 +7,10 @@
 //
 
 #import "PDMidViewController.h"
- #import <objc/runtime.h>
-
+#import <objc/runtime.h>
+#import "LDMyClass+Category2.h"
+#import "LDMyClass+Category1.h"
+#import "LDMyClass.h"
 @interface PDMidViewController ()
 
 @end
@@ -32,7 +34,11 @@
     BOOL aBOOL = class_isMetaClass(a);//NO
     BOOL bBOOL = class_isMetaClass(b);//YES
     
-    NSLog(@"nnnnn");
+    
+    LDMyClass *myclass = [[LDMyClass alloc] init];
+    [myclass printName];
+    myclass.name = @"category";
+    NSLog(@"myclass.name - %@", myclass.name);
 }
 
 - (void)cancleAction

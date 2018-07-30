@@ -87,6 +87,16 @@
             value = "1"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "OBJC_PRINT_LOAD_METHODS"
+            value = "YES"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "OBJC_PRINT_REPLACED_METHODS"
+            value = "YES"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
