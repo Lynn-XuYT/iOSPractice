@@ -23,7 +23,7 @@
 {
     self = [super init];
     if (self) {
-        [self initDataSouce];
+//        [self initDataSouce];
     }
     return self;
 }
@@ -75,6 +75,19 @@
 }
 
 #pragma mark - initDataSouce
+
+- (void)setIndex:(int)index
+{
+    switch (index) {
+        case 0:
+            [self initDataSouce];
+            break;
+            
+        default:
+            break;
+    }
+}
+
 - (void)initDataSouce
 {
     NSMutableDictionary *mdict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
