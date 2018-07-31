@@ -7,6 +7,7 @@
 //
 
 #import "DLScrollViewController.h"
+#import "LDScrollContainerViewController.h"
 #import "DLToolMenu.h"
 
 #define statusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
@@ -50,7 +51,9 @@
         NSArray *colorArray = @[[UIColor redColor],[UIColor yellowColor],[UIColor blueColor],[UIColor purpleColor],[UIColor cyanColor]];
         NSMutableArray *marray = [NSMutableArray array];
         for (int i = 0; i < 10; i++) {
-            UIViewController *controller = [[UIViewController alloc] init];
+            LDScrollContainerViewController *controller = [[LDScrollContainerViewController alloc] init];
+            controller.index = i;
+            controller.superController = self;
             controller.title = [NSString stringWithFormat:@"title - %d",i];
             controller.view.backgroundColor = colorArray[i % 5];
             controller.view.frame = CGRectMake( CGRectGetWidth(scrollView.frame) * i, 0,CGRectGetWidth(scrollView.frame), CGRectGetHeight(scrollView.frame));

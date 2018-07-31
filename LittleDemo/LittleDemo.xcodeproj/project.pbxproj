@@ -48,6 +48,8 @@
 		BAF02998210EE9D900BC626B /* LDMyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF02997210EE9D900BC626B /* LDMyClass.m */; };
 		BAF0299B210EE9FA00BC626B /* LDMyClass+Category1.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF0299A210EE9FA00BC626B /* LDMyClass+Category1.m */; };
 		BAF0299E210EEA0500BC626B /* LDMyClass+Category2.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF0299D210EEA0500BC626B /* LDMyClass+Category2.m */; };
+		BAF029A1210F39E600BC626B /* LDScrollContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF029A0210F39E600BC626B /* LDScrollContainerViewController.m */; };
+		BAF029A5210F3ED500BC626B /* LDRequestDependenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF029A4210F3ED500BC626B /* LDRequestDependenceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +151,11 @@
 		BAF0299A210EE9FA00BC626B /* LDMyClass+Category1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LDMyClass+Category1.m"; sourceTree = "<group>"; };
 		BAF0299C210EEA0500BC626B /* LDMyClass+Category2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LDMyClass+Category2.h"; sourceTree = "<group>"; };
 		BAF0299D210EEA0500BC626B /* LDMyClass+Category2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LDMyClass+Category2.m"; sourceTree = "<group>"; };
+		BAF0299F210F39E600BC626B /* LDScrollContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDScrollContainerViewController.h; sourceTree = "<group>"; };
+		BAF029A0210F39E600BC626B /* LDScrollContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDScrollContainerViewController.m; sourceTree = "<group>"; };
+		BAF029A3210F3ED500BC626B /* LDRequestDependenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDRequestDependenceViewController.h; sourceTree = "<group>"; };
+		BAF029A4210F3ED500BC626B /* LDRequestDependenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDRequestDependenceViewController.m; sourceTree = "<group>"; };
+		BAF029A6210FFEE000BC626B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,15 +222,18 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		BA189ED5205A4E4C00F6347A /* TabScroll */ = {
+		BA189ED5205A4E4C00F6347A /* TabFirstScroll */ = {
 			isa = PBXGroup;
 			children = (
+				BAF029A2210F3EAB00BC626B /* RequestDependence */,
 				BA03F36F205CF64E009D3CAB /* DLToolMenu.h */,
 				BA03F370205CF64E009D3CAB /* DLToolMenu.m */,
 				BA189ED6205A4E4C00F6347A /* DLScrollViewController.h */,
 				BA189ED7205A4E4C00F6347A /* DLScrollViewController.m */,
+				BAF0299F210F39E600BC626B /* LDScrollContainerViewController.h */,
+				BAF029A0210F39E600BC626B /* LDScrollContainerViewController.m */,
 			);
-			path = TabScroll;
+			path = TabFirstScroll;
 			sourceTree = "<group>";
 		};
 		BA189ED9205A4E5700F6347A /* Socket */ = {
@@ -299,7 +309,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		BA189F14205A4F6700F6347A /* TabDownAndUp */ = {
+		BA189F14205A4F6700F6347A /* TabSecondDownAndUp */ = {
 			isa = PBXGroup;
 			children = (
 				BA189F19205A4F6700F6347A /* LDCommonCell.h */,
@@ -311,10 +321,10 @@
 				BA189F1C205A4F6700F6347A /* ViewController.h */,
 				BA189F17205A4F6700F6347A /* ViewController.m */,
 			);
-			path = TabDownAndUp;
+			path = TabSecondDownAndUp;
 			sourceTree = "<group>";
 		};
-		BA189F21205A501100F6347A /* TabSocket */ = {
+		BA189F21205A501100F6347A /* TabthirdSocket */ = {
 			isa = PBXGroup;
 			children = (
 				BA189F22205A507300F6347A /* DLTestSocketViewController.h */,
@@ -326,7 +336,7 @@
 				BA1BC6C220D0B61A008BF7FB /* DLStreamManager.h */,
 				BA1BC6C320D0B61A008BF7FB /* DLStreamManager.m */,
 			);
-			path = TabSocket;
+			path = TabthirdSocket;
 			sourceTree = "<group>";
 		};
 		BA8AC3B42050ECDF001F65B1 = {
@@ -356,10 +366,10 @@
 				BAF02991210EE8D800BC626B /* TabMid */,
 				BADBAB46207DF11C0078E103 /* ReachabilityTest */,
 				BA03F373205F6292009D3CAB /* FPS */,
-				BA189F21205A501100F6347A /* TabSocket */,
-				BA189F14205A4F6700F6347A /* TabDownAndUp */,
+				BA189F21205A501100F6347A /* TabthirdSocket */,
+				BA189F14205A4F6700F6347A /* TabSecondDownAndUp */,
 				BA189ED9205A4E5700F6347A /* Socket */,
-				BA189ED5205A4E4C00F6347A /* TabScroll */,
+				BA189ED5205A4E4C00F6347A /* TabFirstScroll */,
 				BA189E912058F6A700F6347A /* TabBar */,
 				BA8AC3C02050ECE0001F65B1 /* AppDelegate.h */,
 				BA8AC3C12050ECE0001F65B1 /* AppDelegate.m */,
@@ -370,6 +380,7 @@
 				BA8AC3CF2050ECE2001F65B1 /* main.m */,
 				BAE949EC205671EC00625AF6 /* DLBaseViewController.h */,
 				BAE949ED205671EC00625AF6 /* DLBaseViewController.mm */,
+				BAF029A6210FFEE000BC626B /* PrefixHeader.pch */,
 			);
 			path = LittleDemo;
 			sourceTree = "<group>";
@@ -430,6 +441,15 @@
 				BAF0299D210EEA0500BC626B /* LDMyClass+Category2.m */,
 			);
 			path = CategoryTest;
+			sourceTree = "<group>";
+		};
+		BAF029A2210F3EAB00BC626B /* RequestDependence */ = {
+			isa = PBXGroup;
+			children = (
+				BAF029A3210F3ED500BC626B /* LDRequestDependenceViewController.h */,
+				BAF029A4210F3ED500BC626B /* LDRequestDependenceViewController.m */,
+			);
+			path = RequestDependence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -595,6 +615,7 @@
 				BA189EFF205A4E5700F6347A /* DDContextFilterLogFormatter.m in Sources */,
 				BA189EF9205A4E5700F6347A /* DLSocketManager.m in Sources */,
 				BAE949EE205671EC00625AF6 /* DLBaseViewController.mm in Sources */,
+				BAF029A5210F3ED500BC626B /* LDRequestDependenceViewController.m in Sources */,
 				BAF02998210EE9D900BC626B /* LDMyClass.m in Sources */,
 				BA189F01205A4E5700F6347A /* DDMultiFormatter.m in Sources */,
 				BA03F371205CF64E009D3CAB /* DLToolMenu.m in Sources */,
@@ -607,6 +628,7 @@
 				BA5F1E8020B7BCEB00C53292 /* DLStreamViewController.m in Sources */,
 				BAF0299B210EE9FA00BC626B /* LDMyClass+Category1.m in Sources */,
 				BA8AC3D02050ECE2001F65B1 /* main.m in Sources */,
+				BAF029A1210F39E600BC626B /* LDScrollContainerViewController.m in Sources */,
 				BA189E992058F76500F6347A /* DLTabBarView.m in Sources */,
 				BA189EFB205A4E5700F6347A /* GCDAsyncUdpSocket.m in Sources */,
 				BA1BC6C420D0B61A008BF7FB /* DLStreamManager.m in Sources */,
@@ -786,6 +808,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HYBAG3V76T;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LittleDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = LittleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -809,6 +834,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HYBAG3V76T;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LittleDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = LittleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
