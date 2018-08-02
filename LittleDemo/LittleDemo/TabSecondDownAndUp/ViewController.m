@@ -10,9 +10,6 @@
 #import "LDCommonCell.h"
 #import "LDDownloadAndUploadViewController.h"
 
-#define DescriptionString   @"DescriptionString"
-#define ActionClass         @"ActionClass"
-
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, assign) int testInt;

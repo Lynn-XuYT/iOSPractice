@@ -1,26 +1,24 @@
 //
-//  DLBaseViewController.m
+//  DLBaseTabBarViewController.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/12.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLBaseViewController.h"
+#import "DLBaseTabBarViewController.h"
 #import<objc/runtime.h>
 
-@interface DLBaseViewController ()
+@interface DLBaseTabBarViewController ()
 
 @end
 
-@implementation DLBaseViewController
+@implementation DLBaseTabBarViewController
 
 - (instancetype)init
 {
     self = [super init];
-    if (self)
-    {
-        
+    if (self) {
         
     }
     return self;
@@ -46,6 +44,8 @@
 {
     [super viewWillAppear:animated];
     
+    /*
+     // TEST
     NSString *str = @"hahahahah";
     NSData *data1 = [str dataUsingEncoding:NSUTF8StringEncoding];
     long len = [data1 length];
@@ -68,15 +68,17 @@
         NSLog(@"error");
         return;
     }
+     */
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self performSelector:@selector(eat:) withObject:nil afterDelay:0];
+//    [self performSelector:@selector(eat:) withObject:nil afterDelay:0];
 }
 
+#pragma mark - test
 +(BOOL)resolveInstanceMethod:(SEL)sel
 {
     if (sel == @selector(eat:)) {

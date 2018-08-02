@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLBaseViewController.h"
+#import "LDBaseViewController.h"
 
-@interface DLStreamViewController : DLBaseViewController
+@interface DLStreamViewController : LDBaseViewController
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LDBaseViewController.h"
 
-@interface LDRequestDependenceViewController : UIViewController
+@interface LDRequestDependenceViewController : LDBaseViewController
 
 @end

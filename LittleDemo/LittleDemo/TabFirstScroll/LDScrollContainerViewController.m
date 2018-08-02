@@ -8,9 +8,7 @@
 
 #import "LDScrollContainerViewController.h"
 #import "LDRequestDependenceViewController.h"
-
-#define DescriptionString   @"DescriptionString"
-#define ActionClass         @"ActionClass"
+#import "LDRuntimeMethodViewController.h"
 
 @interface LDScrollContainerViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -93,8 +91,12 @@
     NSMutableDictionary *mdict = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
                                   @"解决网络请求的依赖关系",DescriptionString,
                                   @"LDRequestDependenceViewController",ActionClass,nil];
+    NSMutableDictionary *mdict2 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                  @"runtime 常用的几种方法",DescriptionString,
+                                  @"LDRuntimeMethodViewController",ActionClass,nil];
+    
     self.dataSource = [[NSMutableArray alloc] initWithObjects:
-                       mdict,
+                       mdict,mdict2,
                        nil];
 }
 

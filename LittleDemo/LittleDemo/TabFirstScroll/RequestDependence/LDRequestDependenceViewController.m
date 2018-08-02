@@ -7,26 +7,13 @@
 //
 
 #import "LDRequestDependenceViewController.h"
-#define DescriptionString   @"DescriptionString"
-#define ActionClass         @"ActionClass"
 
 
 @interface LDRequestDependenceViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-
-@property (nonatomic, strong) NSMutableArray *dataSource;
 @end
 
 @implementation LDRequestDependenceViewController
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self initDataSouce];
-    }
-    return self;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

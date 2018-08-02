@@ -1,5 +1,5 @@
 //
-//  DLBaseViewController.h
+//  DLBaseTabBarViewController.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/12.
@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-@interface DLBaseViewController : UITabBarController
+@interface DLBaseTabBarViewController : UITabBarController
+
 - (instancetype)initWithTittle:(NSString *)title imageName:(NSString *)imageName;
+
 @end
