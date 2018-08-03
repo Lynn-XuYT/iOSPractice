@@ -39,6 +39,9 @@
     [self.view addSubview:self.textLabel];
     
     _man = [Man new];
+    _man.name = @"lilei";
+    _man.age = 16;
+    _man.sex = @"male";
     _man.manString1 = @"manString1";
     _man.manString2 = @"manString2";
     _man.manString3 = @"manString3";
@@ -84,7 +87,7 @@
     
     
     unsigned int count = 0;
-    Ivar *ivar = class_copyIvarList(_man.class, &count);
+    Ivar *ivar = class_copyIvarList(_man.class, &count);// 包括 共有属性，私有属性，变量。 但不包括父类的属性
     self.textLabel.text = @"modifyProperty";
     for (int i = 0; i < count; i++) {
         Ivar tempIvar = ivar[i];
@@ -190,12 +193,27 @@ void printExADD(id self, SEL _cmd)
 
 - (void)archive
 {
-    self.title = @"动态增加属性";
+    self.title = @"归档解档";
+    
+    self.textLabel.text = [NSString stringWithFormat:@"归档前：\n%@\n",_man];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:_man];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"data"];
+    
+    
+    data = [[NSUserDefaults standardUserDefaults] objectForKey:@"data"];
+    id man = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    self.textLabel.text = [NSString stringWithFormat:@"%@\n解档后：\n%@\n",self.textLabel.text, man];
 }
 
 - (void)dictToModel
 {
-    self.title = @"动态增加属性";
+    self.title = @"字典转模型";
+    NSDictionary *dict = @{@"name":@"tian",
+                           @"age":@"12",
+                           @"personString4":@"hahah"};
+    Person *p = [Person dictToModel:dict];
+    self.textLabel.text = [NSString stringWithFormat:@"dict:\n%@\n\nmodel:\n%@",dict, p];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -237,10 +255,109 @@ void printExADD(id self, SEL _cmd)
 
 @end
 
+@interface Person ()
+{
+    NSString *_personString4;
+}
+@property (nonatomic, strong) NSString *personString5;
+@end
+
 @implementation Person
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"name=%@; age=%ld; sex=%@; _personString4=%@; personString5=%@",self.name,(long)self.age,self.sex,_personString4,self.personString5];
+}
+
++ (Person *)dictToModel:(NSDictionary *)dic
+{
+//    id myObj = [[self alloc] init];
+//    unsigned int count = 0;
+//    Ivar *ivarlist = class_copyIvarList(self.class, &count);
+//    for (int i = 0; i < count; i++) {
+//        Ivar temp = ivarlist[i];
+//        const char *varChar = ivar_getName(temp);
+//        NSString *varString = [NSString stringWithUTF8String:varChar];
+//        id value = [dict objectForKey:varString];
+//        if (value) {
+//            object_setIvar(myObj, temp, value);
+//        }
+//    }
+//    return myObj;
+    
+    id myObj = [[self alloc] init];
+    
+    unsigned int outCount;
+    
+    //获取类中的所有成员属性
+    objc_property_t *arrPropertys = class_copyPropertyList([self class], &outCount);
+    
+    for (NSInteger i = 0; i < outCount; i ++) {
+        objc_property_t property = arrPropertys[i];
+        
+        //获取属性名字符串
+        //model中的属性名
+        NSString *propertyName = [NSString stringWithUTF8String:property_getName(property)];
+        id propertyValue = dic[propertyName];
+        
+        if (propertyValue != nil) {
+            [myObj setValue:propertyValue forKey:propertyName];
+        }
+    }
+    
+    free(arrPropertys);
+    
+    return myObj;
+}
+
+@end
+
+
+@interface Man ()
+{
+    NSString *_manString4;
+}
+@property (nonatomic, strong) NSString *manString5;
 @end
 
 @implementation Man
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"name=%@; age=%ld; sex=%@; manString1=%@; manString2=%@; manString3=%@; manString4=%@; manString5=%@",self.name,(long)self.age,self.sex,self.manString1,self.manString2,self.manString3,_manString4,self.manString5];
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    unsigned int count = 0;
+    objc_property_t *properts = class_copyPropertyList(self.class, &count);
+    for (int i = 0; i < count; i++) {
+        objc_property_t property = properts[i];
+//        const char *type = property_getAttributes(property);    // 获取属性类型
+        const char *varChar = property_getName(property);       // 获取属性名
+        NSString *key = [NSString stringWithUTF8String:varChar];
+        id value = [self valueForKey:key];         // 获取属性值
+        [aCoder encodeObject:value forKey:key];
+    }
+}
+
+- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init]) {
+        unsigned int count = 0;
+        objc_property_t *properts = class_copyPropertyList(self.class, &count);
+        for (int i = 0; i < count; i++) {
+            objc_property_t property = properts[i];
+//            const char *type = property_getAttributes(property);    // 获取属性类型
+            const char *varChar = property_getName(property);       // 获取属性名
+            NSString *key = [NSString stringWithUTF8String:varChar];
+            // 进行解档取值
+            id value = [aDecoder decodeObjectForKey:key];         // 获取属性值
+            [self setValue:value forKey:key];
+        }
+    }
+    return self;
+}
 @end
 
 @implementation Women

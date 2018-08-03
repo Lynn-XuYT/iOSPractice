@@ -15,9 +15,11 @@
 @property (nonatomic, assign) NSInteger age;
 @property (nonatomic, strong) NSString *sex;
 
++ (Person *)dictToModel:(NSDictionary *)dict;
+
 @end
 
-@interface Man : Person
+@interface Man : Person<NSCoding>
 
 @property (nonatomic, strong) NSString *manString1;
 @property (nonatomic, strong) NSString *manString2;
