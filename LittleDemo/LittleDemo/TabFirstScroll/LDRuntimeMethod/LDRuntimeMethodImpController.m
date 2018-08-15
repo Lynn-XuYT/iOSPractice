@@ -81,6 +81,50 @@
     }
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self becomeFirstResponder]; //设置为第一响应者
+    UIMenuController *menu = [UIMenuController sharedMenuController];
+    [menu setTargetRect:CGRectMake(20, 30, 200, 20) inView:self.view];
+    // 定义两个菜单a和b
+    UIMenuItem *a = [[UIMenuItem alloc] initWithTitle:@"aaaaaaaa"
+                                               action:@selector(paste:)];
+    UIMenuItem *b = [[UIMenuItem alloc] initWithTitle:@"bbbbbbbb"
+                                               action:@selector(copy)];
+    // 自定义菜单添加到菜单栏中
+    menu.menuItems = @[a,b,b,b,b,b,b];
+    menu.menuVisible = YES;
+}
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    if (action == @selector(paste:))
+    {
+        return YES;
+    } else if (action == @selector(cut:))
+    {
+        return YES;
+    }
+    else{
+        return NO;
+    }
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (void)paste:(id)sender
+{
+    
+}
+
+- (void)cut:(id)sender
+{
+    
+}
+
 - (void)modifyProperty
 {
     self.title = @"更改属性值";
@@ -213,6 +257,17 @@ void printExADD(id self, SEL _cmd)
                            @"personString4":@"hahah"};
     Person *p = [Person dictToModel:dict];
     self.textLabel.text = [NSString stringWithFormat:@"dict:\n%@\n\nmodel:\n%@",dict, p];
+    
+    NSMutableArray *array = [NSMutableArray array];
+    NSString *s1 = @"nil";
+    NSString *s2 = @"nil";
+    NSString *s3 = nil;
+    NSString *s4 = @"nil";
+    [array addObjectsFromArray:@[s1,s2,s3,s4]];
+    
+    NSLog(@"%@",array);
+    
+    
     
 }
 
