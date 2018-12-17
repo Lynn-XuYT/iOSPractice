@@ -37,6 +37,7 @@
 		BA1BC6C420D0B61A008BF7FB /* DLStreamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1BC6C320D0B61A008BF7FB /* DLStreamManager.m */; };
 		BA5F1E7D20B7BCD600C53292 /* DLGCDAnsySocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7C20B7BCD600C53292 /* DLGCDAnsySocketViewController.m */; };
 		BA5F1E8020B7BCEB00C53292 /* DLStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7F20B7BCEB00C53292 /* DLStreamViewController.m */; };
+		BA854E3621BF5A630063CB9A /* LDCopyTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA854E3521BF5A630063CB9A /* LDCopyTestController.m */; };
 		BA8AC3C22050ECE0001F65B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AC3C12050ECE0001F65B1 /* AppDelegate.m */; };
 		BA8AC3C82050ECE0001F65B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8AC3C62050ECE0001F65B1 /* Main.storyboard */; };
 		BA8AC3CA2050ECE1001F65B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8AC3C92050ECE1001F65B1 /* Assets.xcassets */; };
@@ -133,6 +134,8 @@
 		BA5F1E7C20B7BCD600C53292 /* DLGCDAnsySocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLGCDAnsySocketViewController.m; sourceTree = "<group>"; };
 		BA5F1E7E20B7BCEB00C53292 /* DLStreamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLStreamViewController.h; sourceTree = "<group>"; };
 		BA5F1E7F20B7BCEB00C53292 /* DLStreamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLStreamViewController.m; sourceTree = "<group>"; };
+		BA854E3421BF5A630063CB9A /* LDCopyTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCopyTestController.h; sourceTree = "<group>"; };
+		BA854E3521BF5A630063CB9A /* LDCopyTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCopyTestController.m; sourceTree = "<group>"; };
 		BA8AC3BD2050ECE0001F65B1 /* LittleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8AC3C02050ECE0001F65B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA8AC3C12050ECE0001F65B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -245,6 +248,7 @@
 		BA189ED5205A4E4C00F6347A /* TabFirstScroll */ = {
 			isa = PBXGroup;
 			children = (
+				BA854E3321BF5A450063CB9A /* LDCopyTest */,
 				BAF029A72112A61F00BC626B /* LDRuntimeMethod */,
 				BAF029A2210F3EAB00BC626B /* RequestDependence */,
 				BA03F36F205CF64E009D3CAB /* DLToolMenu.h */,
@@ -358,6 +362,15 @@
 				BA1BC6C320D0B61A008BF7FB /* DLStreamManager.m */,
 			);
 			path = TabthirdSocket;
+			sourceTree = "<group>";
+		};
+		BA854E3321BF5A450063CB9A /* LDCopyTest */ = {
+			isa = PBXGroup;
+			children = (
+				BA854E3421BF5A630063CB9A /* LDCopyTestController.h */,
+				BA854E3521BF5A630063CB9A /* LDCopyTestController.m */,
+			);
+			path = LDCopyTest;
 			sourceTree = "<group>";
 		};
 		BA8AC3B42050ECDF001F65B1 = {
@@ -652,6 +665,7 @@
 				BAF02998210EE9D900BC626B /* LDMyClass.m in Sources */,
 				BA189F01205A4E5700F6347A /* DDMultiFormatter.m in Sources */,
 				BA03F371205CF64E009D3CAB /* DLToolMenu.m in Sources */,
+				BA854E3621BF5A630063CB9A /* LDCopyTestController.m in Sources */,
 				BA5F1E7D20B7BCD600C53292 /* DLGCDAnsySocketViewController.m in Sources */,
 				BA189E962058F74700F6347A /* DLMainTabBarViewController.m in Sources */,
 				BA189F05205A4E5700F6347A /* DDFileLogger.m in Sources */,

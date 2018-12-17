@@ -21,7 +21,9 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [[DLSocketManager shareInstance] socketConnectHost:@"10.73.27.63" onPort:8890];
+//    [[DLSocketManager shareInstance] socketConnectHost:@"10.73.27.63" onPort:8890];
+    [[DLSocketManager shareInstance] socketConnectHost:@"10.73.50.55" onPort:8890];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusMsg:) name:@"statusMsg" object:nil];
     
     UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(10, 60, SCREEN_WIDTH - 20, 60)];

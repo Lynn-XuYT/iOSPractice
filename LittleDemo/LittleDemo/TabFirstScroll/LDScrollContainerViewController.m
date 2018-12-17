@@ -9,6 +9,7 @@
 #import "LDScrollContainerViewController.h"
 #import "LDRequestDependenceViewController.h"
 #import "LDRuntimeMethodViewController.h"
+#import "LDCopyTestController.h"
 
 @interface LDScrollContainerViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -94,9 +95,11 @@
     NSMutableDictionary *mdict2 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
                                   @"runtime 常用的几种方法",DescriptionString,
                                   @"LDRuntimeMethodViewController",ActionClass,nil];
-    
+    NSMutableDictionary *mdict3 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                   @"深浅拷贝",DescriptionString,
+                                   @"LDCopyTestController",ActionClass,nil];
     self.dataSource = [[NSMutableArray alloc] initWithObjects:
-                       mdict,mdict2,
+                       mdict,mdict2,mdict3,
                        nil];
 }
 

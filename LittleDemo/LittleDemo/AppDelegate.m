@@ -38,9 +38,43 @@
     self.window.rootViewController = tabBarController;
     //显示窗口
     [self.window makeKeyAndVisible];
+    
+//    //第三方应用打开本应用启动
+//    if(launchOptions[UIApplicationLaunchOptionsURLKey] != nil){
+//        [self application:application handleOpenURL:launchOptions[UIApplicationLaunchOptionsURLKey]];
+//    }
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+    NSLog(@"URL scheme:%@", [url scheme]);
+    //参数
+    NSLog(@"URL host:%@", [url host]);
+    NSLog(@"URL query:%@", [url query]);
+    
+    
+    UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:[url host] message:[url query] delegate:self cancelButtonTitle:nil otherButtonTitles:@"分享完成", nil];
+    
+    [alertView show];
+    
+    NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+    //url中参数的key value
+    NSMutableDictionary *parameter = [NSMutableDictionary dictionary];
+    for (NSURLQueryItem *item in urlComponents.queryItems) {
+        [parameter setValue:item.value forKey:item.name];
+    }
+
+    
+    return YES;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    //返回URL scheme = wsl123456的主应用
+    NSURL * url = [NSURL URLWithString:@"openurlfirst://success"];
+    [[UIApplication sharedApplication] openURL:url options:nil completionHandler:^(BOOL success) {
+    }];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

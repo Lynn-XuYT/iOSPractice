@@ -122,9 +122,10 @@ enum{
         [[NSNotificationCenter defaultCenter] postNotificationName:@"statusMsg" object:[NSDictionary dictionaryWithObjectsAndKeys:@"连接成功...",@"key", nil]];
     });
     
+    [self longConnectSocket];
     //[self.socket readDataWithTimeout:-1 tag:1];
     //60s后 开启定时器，并每隔60s向服务器发送一次心跳包
-    [self startTimer];
+//    [self startTimer];
 //    [self performSelector:@selector(startTimer) onThread:[NSThread currentThread] withObject:nil waitUntilDone:YES];
 //    [self performSelector:@selector(test:) withObject:self afterDelay:0.1];
 }

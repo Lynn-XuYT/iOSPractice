@@ -79,6 +79,35 @@
         default:
             break;
     }
+    
+    //1.确定请求路径
+    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
+    
+    //2.创建请求对象
+    //请求对象内部默认已经包含了请求头和请求方法（GET）
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    //3.获得会话对象
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    //4.根据会话对象创建一个Task(发送请求）
+    __block uint64_t start = 0;
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSNumber *cost = [NSNumber numberWithUnsignedLongLong:([[NSDate date] timeIntervalSince1970] * 1000 - start)];
+        NSLog(@"lynne - %@",cost);
+        
+        if (error == nil) {
+            //6.解析服务器返回的数据
+            //说明：（此处返回的数据是JSON格式的，因此使用NSJSONSerialization进行反序列化处理）
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+            
+            NSLog(@"%@",dict);
+        }
+    }];
+    
+    //5.执行任务
+    [dataTask resume];
+    start = [[NSDate date] timeIntervalSince1970] * 1000;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
