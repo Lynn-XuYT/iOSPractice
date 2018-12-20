@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "LDCommonCell.h"
 #import "LDDownloadAndUploadViewController.h"
+#import "LDDropMenuView.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource, LDDropMenuViewDelegate>
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, assign) int testInt;
 @end
@@ -21,16 +22,23 @@
     
     [super viewDidLoad];
     self.title = @"上传下载";
+    
+    
+    LDDropMenuView *dropMenuView = [[LDDropMenuView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), 60)];
+    dropMenuView.delegate = self;
+    [self.view addSubview:dropMenuView];
     // Do any additional setup after loading the view, typically from a nib.
     self.dataSource = [self getDataSource];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 124, CGRectGetWidth(self.view.frame), 60)];
 //    tableView.backgroundColor = [UIColor yellowColor];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:tableView];
+    
+    [self.view bringSubviewToFront:dropMenuView];
     
     UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"test.png"]];
     imgView.frame = CGRectMake(100, 100, 100, 100);
@@ -75,6 +83,7 @@
 {
     return self.dataSource.count;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     LDCommonCell *cell = [tableView dequeueReusableCellWithIdentifier:@"commoncell"];
@@ -131,6 +140,12 @@
     [marray addObject:mdict];
     return marray;
 }
+
+
+//- (void)onDropMenuItemClicked:(UIButton *)button
+//{
+//
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

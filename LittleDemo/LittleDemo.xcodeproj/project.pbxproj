@@ -35,6 +35,10 @@
 		BA189F20205A4F6700F6347A /* LDDownloadAndUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189F18205A4F6700F6347A /* LDDownloadAndUploadViewController.m */; };
 		BA189F24205A507300F6347A /* DLTestSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189F23205A507300F6347A /* DLTestSocketViewController.m */; };
 		BA1BC6C420D0B61A008BF7FB /* DLStreamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1BC6C320D0B61A008BF7FB /* DLStreamManager.m */; };
+		BA2C7E2821C7A0FC008B46BE /* LDDropMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2721C7A0FC008B46BE /* LDDropMenuView.m */; };
+		BA2C7E2B21C8CECE008B46BE /* LDDropMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2A21C8CECE008B46BE /* LDDropMenuItem.m */; };
+		BA2C7E2E21C8D0B2008B46BE /* LDDropMenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2D21C8D0B2008B46BE /* LDDropMenuItemModel.m */; };
+		BA2C7E3121C911B7008B46BE /* LDDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E3021C911B7008B46BE /* LDDropMenu.m */; };
 		BA5F1E7D20B7BCD600C53292 /* DLGCDAnsySocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7C20B7BCD600C53292 /* DLGCDAnsySocketViewController.m */; };
 		BA5F1E8020B7BCEB00C53292 /* DLStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7F20B7BCEB00C53292 /* DLStreamViewController.m */; };
 		BA854E3621BF5A630063CB9A /* LDCopyTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA854E3521BF5A630063CB9A /* LDCopyTestController.m */; };
@@ -130,6 +134,14 @@
 		BA189F23205A507300F6347A /* DLTestSocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTestSocketViewController.m; sourceTree = "<group>"; };
 		BA1BC6C220D0B61A008BF7FB /* DLStreamManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLStreamManager.h; sourceTree = "<group>"; };
 		BA1BC6C320D0B61A008BF7FB /* DLStreamManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLStreamManager.m; sourceTree = "<group>"; };
+		BA2C7E2621C7A0FC008B46BE /* LDDropMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDropMenuView.h; sourceTree = "<group>"; };
+		BA2C7E2721C7A0FC008B46BE /* LDDropMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenuView.m; sourceTree = "<group>"; };
+		BA2C7E2921C8CECE008B46BE /* LDDropMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDropMenuItem.h; sourceTree = "<group>"; };
+		BA2C7E2A21C8CECE008B46BE /* LDDropMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenuItem.m; sourceTree = "<group>"; };
+		BA2C7E2C21C8D0B2008B46BE /* LDDropMenuItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDropMenuItemModel.h; sourceTree = "<group>"; };
+		BA2C7E2D21C8D0B2008B46BE /* LDDropMenuItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenuItemModel.m; sourceTree = "<group>"; };
+		BA2C7E2F21C911B7008B46BE /* LDDropMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDropMenu.h; sourceTree = "<group>"; };
+		BA2C7E3021C911B7008B46BE /* LDDropMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenu.m; sourceTree = "<group>"; };
 		BA5F1E7B20B7BCD600C53292 /* DLGCDAnsySocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLGCDAnsySocketViewController.h; sourceTree = "<group>"; };
 		BA5F1E7C20B7BCD600C53292 /* DLGCDAnsySocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLGCDAnsySocketViewController.m; sourceTree = "<group>"; };
 		BA5F1E7E20B7BCEB00C53292 /* DLStreamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLStreamViewController.h; sourceTree = "<group>"; };
@@ -337,6 +349,7 @@
 		BA189F14205A4F6700F6347A /* TabSecondDownAndUp */ = {
 			isa = PBXGroup;
 			children = (
+				BA2C7E2521C7A0B6008B46BE /* DropMenu */,
 				BA189F19205A4F6700F6347A /* LDCommonCell.h */,
 				BA189F15205A4F6700F6347A /* LDCommonCell.m */,
 				BA189F1A205A4F6700F6347A /* LDFileListViewController.h */,
@@ -362,6 +375,21 @@
 				BA1BC6C320D0B61A008BF7FB /* DLStreamManager.m */,
 			);
 			path = TabthirdSocket;
+			sourceTree = "<group>";
+		};
+		BA2C7E2521C7A0B6008B46BE /* DropMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BA2C7E2921C8CECE008B46BE /* LDDropMenuItem.h */,
+				BA2C7E2A21C8CECE008B46BE /* LDDropMenuItem.m */,
+				BA2C7E2F21C911B7008B46BE /* LDDropMenu.h */,
+				BA2C7E3021C911B7008B46BE /* LDDropMenu.m */,
+				BA2C7E2621C7A0FC008B46BE /* LDDropMenuView.h */,
+				BA2C7E2721C7A0FC008B46BE /* LDDropMenuView.m */,
+				BA2C7E2C21C8D0B2008B46BE /* LDDropMenuItemModel.h */,
+				BA2C7E2D21C8D0B2008B46BE /* LDDropMenuItemModel.m */,
+			);
+			path = DropMenu;
 			sourceTree = "<group>";
 		};
 		BA854E3321BF5A450063CB9A /* LDCopyTest */ = {
@@ -648,6 +676,7 @@
 			files = (
 				BA03F376205F62AE009D3CAB /* FPSDisplay.m in Sources */,
 				BAF0299E210EEA0500BC626B /* LDMyClass+Category2.m in Sources */,
+				BA2C7E2E21C8D0B2008B46BE /* LDDropMenuItemModel.m in Sources */,
 				BA189F1F205A4F6700F6347A /* ViewController.m in Sources */,
 				BA189ED8205A4E4C00F6347A /* DLScrollViewController.m in Sources */,
 				BA189F1D205A4F6700F6347A /* LDCommonCell.m in Sources */,
@@ -678,8 +707,11 @@
 				BA8AC3D02050ECE2001F65B1 /* main.m in Sources */,
 				BAF029A1210F39E600BC626B /* LDScrollContainerViewController.m in Sources */,
 				BA189E992058F76500F6347A /* DLTabBarView.m in Sources */,
+				BA2C7E2821C7A0FC008B46BE /* LDDropMenuView.m in Sources */,
 				BA189EFB205A4E5700F6347A /* GCDAsyncUdpSocket.m in Sources */,
+				BA2C7E2B21C8CECE008B46BE /* LDDropMenuItem.m in Sources */,
 				BA1BC6C420D0B61A008BF7FB /* DLStreamManager.m in Sources */,
+				BA2C7E3121C911B7008B46BE /* LDDropMenu.m in Sources */,
 				BA189F24205A507300F6347A /* DLTestSocketViewController.m in Sources */,
 				BA189F04205A4E5700F6347A /* DDAbstractDatabaseLogger.m in Sources */,
 				BADBAB49207DF11D0078E103 /* Reachability.m in Sources */,
