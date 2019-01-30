@@ -39,6 +39,8 @@
 		BA2C7E2B21C8CECE008B46BE /* LDDropMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2A21C8CECE008B46BE /* LDDropMenuItem.m */; };
 		BA2C7E2E21C8D0B2008B46BE /* LDDropMenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2D21C8D0B2008B46BE /* LDDropMenuItemModel.m */; };
 		BA2C7E3121C911B7008B46BE /* LDDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E3021C911B7008B46BE /* LDDropMenu.m */; };
+		BA5323512201AEA700FD584E /* LDFirstSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323502201AEA700FD584E /* LDFirstSwiftClass.swift */; };
+		BA5323532201B58C00FD584E /* LDFifthSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323522201B58C00FD584E /* LDFifthSwiftViewController.swift */; };
 		BA5F1E7D20B7BCD600C53292 /* DLGCDAnsySocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7C20B7BCD600C53292 /* DLGCDAnsySocketViewController.m */; };
 		BA5F1E8020B7BCEB00C53292 /* DLStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7F20B7BCEB00C53292 /* DLStreamViewController.m */; };
 		BA854E3621BF5A630063CB9A /* LDCopyTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA854E3521BF5A630063CB9A /* LDCopyTestController.m */; };
@@ -142,6 +144,9 @@
 		BA2C7E2D21C8D0B2008B46BE /* LDDropMenuItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenuItemModel.m; sourceTree = "<group>"; };
 		BA2C7E2F21C911B7008B46BE /* LDDropMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDropMenu.h; sourceTree = "<group>"; };
 		BA2C7E3021C911B7008B46BE /* LDDropMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenu.m; sourceTree = "<group>"; };
+		BA53234F2201AEA700FD584E /* LittleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA5323502201AEA700FD584E /* LDFirstSwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDFirstSwiftClass.swift; sourceTree = "<group>"; };
+		BA5323522201B58C00FD584E /* LDFifthSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDFifthSwiftViewController.swift; sourceTree = "<group>"; };
 		BA5F1E7B20B7BCD600C53292 /* DLGCDAnsySocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLGCDAnsySocketViewController.h; sourceTree = "<group>"; };
 		BA5F1E7C20B7BCD600C53292 /* DLGCDAnsySocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLGCDAnsySocketViewController.m; sourceTree = "<group>"; };
 		BA5F1E7E20B7BCEB00C53292 /* DLStreamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLStreamViewController.h; sourceTree = "<group>"; };
@@ -392,6 +397,16 @@
 			path = DropMenu;
 			sourceTree = "<group>";
 		};
+		BA53234E2201AE6600FD584E /* TabFifthSwiftPractice */ = {
+			isa = PBXGroup;
+			children = (
+				BA5323502201AEA700FD584E /* LDFirstSwiftClass.swift */,
+				BA53234F2201AEA700FD584E /* LittleDemo-Bridging-Header.h */,
+				BA5323522201B58C00FD584E /* LDFifthSwiftViewController.swift */,
+			);
+			path = TabFifthSwiftPractice;
+			sourceTree = "<group>";
+		};
 		BA854E3321BF5A450063CB9A /* LDCopyTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,13 +441,14 @@
 			isa = PBXGroup;
 			children = (
 				BA074F632112DE520019412A /* Base */,
+				BA189ED5205A4E4C00F6347A /* TabFirstScroll */,
+				BA189F14205A4F6700F6347A /* TabSecondDownAndUp */,
 				BAF02991210EE8D800BC626B /* TabMid */,
+				BA189F21205A501100F6347A /* TabthirdSocket */,
+				BA53234E2201AE6600FD584E /* TabFifthSwiftPractice */,
 				BADBAB46207DF11C0078E103 /* ReachabilityTest */,
 				BA03F373205F6292009D3CAB /* FPS */,
-				BA189F21205A501100F6347A /* TabthirdSocket */,
-				BA189F14205A4F6700F6347A /* TabSecondDownAndUp */,
 				BA189ED9205A4E5700F6347A /* Socket */,
-				BA189ED5205A4E4C00F6347A /* TabFirstScroll */,
 				BA189E912058F6A700F6347A /* TabBar */,
 				BA8AC3C02050ECE0001F65B1 /* AppDelegate.h */,
 				BA8AC3C12050ECE0001F65B1 /* AppDelegate.m */,
@@ -592,7 +608,7 @@
 				TargetAttributes = {
 					BA8AC3BC2050ECDF001F65B1 = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1010;
 					};
 					BA8AC3D42050ECE2001F65B1 = {
 						CreatedOnToolsVersion = 9.3;
@@ -689,9 +705,11 @@
 				BA189EF9205A4E5700F6347A /* DLSocketManager.m in Sources */,
 				BAF029A5210F3ED500BC626B /* LDRequestDependenceViewController.m in Sources */,
 				BAF029AA2112A62F00BC626B /* LDRuntimeMethodViewController.m in Sources */,
+				BA5323532201B58C00FD584E /* LDFifthSwiftViewController.swift in Sources */,
 				BA074F662112DE7B0019412A /* DLBaseTabBarViewController.mm in Sources */,
 				BA074F622112AC2C0019412A /* LDRuntimeMethodImpController.m in Sources */,
 				BAF02998210EE9D900BC626B /* LDMyClass.m in Sources */,
+				BA5323512201AEA700FD584E /* LDFirstSwiftClass.swift in Sources */,
 				BA189F01205A4E5700F6347A /* DDMultiFormatter.m in Sources */,
 				BA03F371205CF64E009D3CAB /* DLToolMenu.m in Sources */,
 				BA854E3621BF5A630063CB9A /* LDCopyTestController.m in Sources */,
@@ -899,6 +917,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LYNN.LittleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LittleDemo/TabFifthSwiftPractice/LittleDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -925,6 +944,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = LYNN.LittleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LittleDemo/TabFifthSwiftPractice/LittleDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				a = "";
@@ -935,6 +955,7 @@
 		BA8AC3ED2050ECE2001F65B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LittleDemoTests/Info.plist;
@@ -953,6 +974,7 @@
 		BA8AC3EE2050ECE2001F65B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LittleDemoTests/Info.plist;
@@ -971,6 +993,7 @@
 		BA8AC3F02050ECE2001F65B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LittleDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -988,6 +1011,7 @@
 		BA8AC3F12050ECE2001F65B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LittleDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

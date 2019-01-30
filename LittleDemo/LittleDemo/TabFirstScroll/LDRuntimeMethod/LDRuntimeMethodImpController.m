@@ -283,21 +283,9 @@ void printExADD(id self, SEL _cmd)
     self.title = @"字典转模型";
     NSDictionary *dict = @{@"name":@"tian",
                            @"age":@"12",
-                           @"personString4":@"hahah"};
+                           @"_personString4":@"hahah"};
     Person *p = [Person dictToModel:dict];
     self.textLabel.text = [NSString stringWithFormat:@"dict:\n%@\n\nmodel:\n%@",dict, p];
-    
-    NSMutableArray *array = [NSMutableArray array];
-    NSString *s1 = @"nil";
-    NSString *s2 = @"nil";
-    NSString *s3 = nil;
-    NSString *s4 = @"nil";
-    [array addObjectsFromArray:@[s1,s2,s3,s4]];
-    
-    NSLog(@"%@",array);
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {

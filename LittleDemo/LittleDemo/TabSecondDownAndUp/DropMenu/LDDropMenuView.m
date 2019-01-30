@@ -17,6 +17,7 @@
 @interface LDDropMenuView()<UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource>
 @property (nonatomic, strong) UIButton *selectedBtn;
 @property (nonatomic, strong) UIView *bgView;
+@property (nonatomic, strong) LDDropMenu *menu;
 
 @property (nonatomic, strong) UITableView *leftTableView;
 @property (nonatomic, strong) UITableView *rightTableView;
@@ -37,10 +38,11 @@
         CGFloat x = 0;
         CGFloat y = 0;
         CGFloat width = SCREEN_WIDTH;
-        CGFloat height = 60;
+        CGFloat height = CGRectGetHeight(frame);
         
         LDDropMenu *menu = [[LDDropMenu alloc] initWithFrame:CGRectMake(x, y, width, height) withDataSource:[self getItems]];
         [self addSubview:menu];
+        self.menu = menu;
         
         UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.frame), CGRectGetWidth(self.frame), SCREEN_HEIGHT)];
         bgView.backgroundColor = [UIColor colorWithRed:112/255.0 green:128/255.0 blue:144/255.0 alpha:0.3];
@@ -144,7 +146,7 @@
 
 - (void)changeFrames:(CGRect)rect withType:(DropMenuItemType)type{
 
-    self.frame = CGRectMake(CGRectGetMinX(self.frame), CGRectGetMinY(self.frame), CGRectGetWidth(self.frame), /*CGRectGetHeight(rect) + 60*/CGRectGetHeight(rect) > 0? SCREEN_HEIGHT : CGRectGetHeight(rect) + 60);
+    self.frame = CGRectMake(CGRectGetMinX(self.frame), CGRectGetMinY(self.frame), CGRectGetWidth(self.frame), /*CGRectGetHeight(rect) + CGRectGetHeight(self.menu.frame)*/CGRectGetHeight(rect) > 0? SCREEN_HEIGHT : CGRectGetHeight(rect) + CGRectGetHeight(self.menu.frame));
     switch (type) {
         case DropMenuItem_1:
         {
@@ -300,7 +302,7 @@
     LDDropMenuItemModel *m1 = [[LDDropMenuItemModel alloc] initWithTitle:@"Drop1" type:(DropMenuItem_1) action:@selector(onBtnClick:) target:self];
     LDDropMenuItemModel *m2 = [[LDDropMenuItemModel alloc] initWithTitle:@"Drop2" type:(DropMenuItem_2) action:@selector(onBtnClick:) target:self];
     LDDropMenuItemModel *m3 = [[LDDropMenuItemModel alloc] initWithTitle:@"Drop3" type:(DropMenuItem_3) action:@selector(onBtnClick:) target:self];
-    LDDropMenuItemModel *m4 = [[LDDropMenuItemModel alloc] initWithTitle:@"Drop4" type:(DropMenuItem_4) action:@selector(onBtnClick:) target:self];
+    LDDropMenuItemModel *m4 = [[LDDropMenuItemModel alloc] initWithTitle:@"Drop4" type:(DropMenuItem_2) action:@selector(onBtnClick:) target:self];
     LDDropMenuItemModel *m5 = [[LDDropMenuItemModel alloc] initWithTitle:@"Drop5" type:(DropMenuItem_3) action:@selector(onBtnClick:) target:self];
     return @[m1, m2, m3, m4, m5];
 }

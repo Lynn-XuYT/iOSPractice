@@ -13,6 +13,7 @@
 #import "DLTabBarItem.h"
 #import "PDMidViewController.h"
 #import "DLTestSocketViewController.h"
+#import "LittleDemo-Swift.h"
 
 @interface DLMainTabBarViewController ()<UITabBarControllerDelegate, DLTabBarViewDelegate>
 @property (nonatomic, strong) DLTabBarView *customTabBarView;
@@ -70,7 +71,7 @@
     UINavigationController *vc2 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     UINavigationController *vc3 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     UINavigationController *vc4 = [[UINavigationController alloc] initWithRootViewController:[[DLTestSocketViewController alloc] init]];
-    UINavigationController *vc5 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UINavigationController *vc5 = [[UINavigationController alloc] initWithRootViewController:[[LDFifthSwiftViewController alloc] init]];
     [self setViewControllers:@[vc1,vc2,vc3,vc4,vc5]];
     
 //    CGFloat width = CGRectGetWidth(self.customTabBarView.frame)/ 5;

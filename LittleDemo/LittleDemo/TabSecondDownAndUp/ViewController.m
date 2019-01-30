@@ -23,15 +23,15 @@
     [super viewDidLoad];
     self.title = @"上传下载";
     
-    
-    LDDropMenuView *dropMenuView = [[LDDropMenuView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), 60)];
+    CGFloat height =  [[UIApplication sharedApplication] statusBarFrame].size.height + 44;
+    LDDropMenuView *dropMenuView = [[LDDropMenuView alloc] initWithFrame:CGRectMake(0, height, CGRectGetWidth(self.view.frame), 40)];
     dropMenuView.delegate = self;
     [self.view addSubview:dropMenuView];
     // Do any additional setup after loading the view, typically from a nib.
     self.dataSource = [self getDataSource];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 124, CGRectGetWidth(self.view.frame), 60)];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, height+40, CGRectGetWidth(self.view.frame), 60)];
 //    tableView.backgroundColor = [UIColor yellowColor];
     tableView.delegate = self;
     tableView.dataSource = self;

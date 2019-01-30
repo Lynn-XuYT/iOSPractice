@@ -11,7 +11,7 @@
 #import "DLMainTabBarViewController.h"
 #import "DLScrollViewController.h"
 #import "FPSDisplay.h"
-
+#import "LittleDemo-Swift.h"
 @interface AppDelegate ()
 
 @end
@@ -64,8 +64,6 @@
     for (NSURLQueryItem *item in urlComponents.queryItems) {
         [parameter setValue:item.value forKey:item.name];
     }
-
-    
     return YES;
 }
 

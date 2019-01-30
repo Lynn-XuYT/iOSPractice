@@ -45,7 +45,7 @@
     NSString *title = itemModel.title;
     
     [btn setTitle:title forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor magentaColor] forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor purpleColor] forState:UIControlStateSelected];
     [btn addTarget:itemModel.target action:itemModel.action forControlEvents:UIControlEventTouchUpInside];
     //    [self.btn setBackgroundImage:[UIColor purpleColor] forState:UIControlStateSelected];

@@ -16,7 +16,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.dataSource = dataSource;
-        self.backgroundColor = [UIColor grayColor];
+        self.backgroundColor = [UIColor lightGrayColor];
         self.contentSize = CGSizeMake(dataSource.count * 180 > CGRectGetWidth(frame) ? dataSource.count * 180 : CGRectGetWidth(frame), CGRectGetHeight(frame));
         self.showsVerticalScrollIndicator = NO;
         self.showsHorizontalScrollIndicator = NO;
