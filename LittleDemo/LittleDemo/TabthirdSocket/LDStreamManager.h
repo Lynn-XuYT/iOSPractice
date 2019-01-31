@@ -1,5 +1,5 @@
 //
-//  DLStreamManager.h
+//  LDStreamManager.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/6/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DLStreamManager : NSObject
+@interface LDStreamManager : NSObject
 
 + (instancetype)shareInstance;
 @end

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LDBaseViewController.h"
 
-@interface LDScrollContainerViewController : UIViewController
+@interface LDScrollContainerViewController : LDBaseViewController
 
 @property (nonatomic, assign) int index;
 @property (nonatomic, strong) UIViewController *superController;

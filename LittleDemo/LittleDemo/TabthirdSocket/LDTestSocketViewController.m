@@ -1,20 +1,20 @@
 //
-//  DLTestSocketViewController.m
+//  LDTestSocketViewController.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/15.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLTestSocketViewController.h"
-#import "DLGCDAnsySocketViewController.h"
-#import "DLStreamViewController.h"
+#import "LDTestSocketViewController.h"
+#import "LDGCDAnsySocketViewController.h"
+#import "LDStreamViewController.h"
 
-@interface DLTestSocketViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface LDTestSocketViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @end
 
-@implementation DLTestSocketViewController
+@implementation LDTestSocketViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,13 +44,13 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0)
     {
-        DLGCDAnsySocketViewController *vc = [DLGCDAnsySocketViewController new];
+        LDGCDAnsySocketViewController *vc = [LDGCDAnsySocketViewController new];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
     else if (indexPath.row == 1)
     {
-        DLStreamViewController *vc = [DLStreamViewController new];
+        LDStreamViewController *vc = [LDStreamViewController new];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }

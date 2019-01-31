@@ -1,5 +1,5 @@
 //
-//  DLBaseTabBarViewController.h
+//  LDBaseTabBarViewController.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/12.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface DLBaseTabBarViewController : UITabBarController
+@interface LDBaseTabBarViewController : UITabBarController
 
 - (instancetype)initWithTittle:(NSString *)title imageName:(NSString *)imageName;
 

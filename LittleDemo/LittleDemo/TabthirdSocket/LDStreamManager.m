@@ -1,14 +1,14 @@
 //
-//  DLStreamManager.m
+//  LDStreamManager.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/6/13.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLStreamManager.h"
+#import "LDStreamManager.h"
 
-@interface DLStreamManager ()<NSStreamDelegate>
+@interface LDStreamManager ()<NSStreamDelegate>
 {
     NSInputStream *_input;
     
@@ -16,14 +16,14 @@
 }
 @end
 
-@implementation DLStreamManager
+@implementation LDStreamManager
 
 + (instancetype)shareInstance
 {
-    static DLStreamManager *manager;
+    static LDStreamManager *manager;
     static dispatch_once_t token;
     dispatch_once(&token, ^{
-        manager = [DLStreamManager new];
+        manager = [LDStreamManager new];
     });
     return manager;
 }

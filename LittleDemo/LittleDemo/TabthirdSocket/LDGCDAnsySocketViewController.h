@@ -1,5 +1,5 @@
 //
-//  DLGCDAnsySocketViewController.h
+//  LDGCDAnsySocketViewController.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/5/25.
@@ -8,6 +8,6 @@
 
 #import "LDBaseViewController.h"
 
-@interface DLGCDAnsySocketViewController : LDBaseViewController
+@interface LDGCDAnsySocketViewController : LDBaseViewController
 
 @end

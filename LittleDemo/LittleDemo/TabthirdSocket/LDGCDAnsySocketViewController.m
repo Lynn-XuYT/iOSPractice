@@ -1,19 +1,19 @@
 //
-//  DLGCDAnsySocketViewController.m
+//  LDGCDAnsySocketViewController.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/5/25.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLGCDAnsySocketViewController.h"
-#import "DLSocketManager.h"
+#import "LDGCDAnsySocketViewController.h"
+#import "LDSocketManager.h"
 
-@interface DLGCDAnsySocketViewController ()
+@interface LDGCDAnsySocketViewController ()
 @property (nonatomic, strong) UITextView *textView;
 @end
 
-@implementation DLGCDAnsySocketViewController
+@implementation LDGCDAnsySocketViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,8 +21,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-//    [[DLSocketManager shareInstance] socketConnectHost:@"10.73.27.63" onPort:8890];
-    [[DLSocketManager shareInstance] socketConnectHost:@"10.73.50.55" onPort:8890];
+//    [[LDSocketManager shareInstance] socketConnectHost:@"10.73.27.63" onPort:8890];
+    [[LDSocketManager shareInstance] socketConnectHost:@"10.73.50.55" onPort:8890];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusMsg:) name:@"statusMsg" object:nil];
     
@@ -53,7 +53,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [[DLSocketManager shareInstance] cutOffSocket];
+    [[LDSocketManager shareInstance] cutOffSocket];
 }
 
 - (void)dealloc

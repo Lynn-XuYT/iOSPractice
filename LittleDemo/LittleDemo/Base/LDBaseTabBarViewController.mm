@@ -1,19 +1,20 @@
 //
-//  DLBaseTabBarViewController.m
+//  LDBaseTabBarViewController.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/12.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLBaseTabBarViewController.h"
-#import<objc/runtime.h>
-
-@interface DLBaseTabBarViewController ()
+#import "LDBaseTabBarViewController.h"
+#import <objc/runtime.h>
+#import "LDTabBarView.h"
+#import "LittleDemo-Swift.h"
+@interface LDBaseTabBarViewController ()
 
 @end
 
-@implementation DLBaseTabBarViewController
+@implementation LDBaseTabBarViewController
 
 - (instancetype)init
 {
@@ -43,7 +44,14 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+    if (self.tabBar.hidden == NO) {
+        for (UIView *view in self.tabBar.subviews) {
+            if (![view isKindOfClass:[LDTabBarView class]]) {
+                // 移除tabBar上所有的子控件
+                [view removeFromSuperview];
+            }
+        }
+    }
     /*
      // TEST
     NSString *str = @"hahahahah";
@@ -71,6 +79,16 @@
      */
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    for (UIView *view in self.tabBar.subviews) {
+        if (![view isKindOfClass:[LDTabBarView class]]) {
+            // 移除tabBar上所有的子控件
+            [view removeFromSuperview];
+        }
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

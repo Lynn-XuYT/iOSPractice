@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA03F371205CF64E009D3CAB /* DLToolMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BA03F370205CF64E009D3CAB /* DLToolMenu.m */; };
+		BA03F371205CF64E009D3CAB /* LDToolMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BA03F370205CF64E009D3CAB /* LDToolMenu.m */; };
 		BA03F376205F62AE009D3CAB /* FPSDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = BA03F375205F62AE009D3CAB /* FPSDisplay.m */; };
 		BA074F622112AC2C0019412A /* LDRuntimeMethodImpController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA074F612112AC2C0019412A /* LDRuntimeMethodImpController.m */; };
-		BA074F662112DE7B0019412A /* DLBaseTabBarViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA074F652112DE7B0019412A /* DLBaseTabBarViewController.mm */; };
+		BA074F662112DE7B0019412A /* LDBaseTabBarViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA074F652112DE7B0019412A /* LDBaseTabBarViewController.mm */; };
 		BA074F692112DE8E0019412A /* LDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA074F682112DE8E0019412A /* LDBaseViewController.m */; };
-		BA189E962058F74700F6347A /* DLMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E942058F74700F6347A /* DLMainTabBarViewController.m */; };
-		BA189E992058F76500F6347A /* DLTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E982058F76500F6347A /* DLTabBarView.m */; };
-		BA189E9C2058F78300F6347A /* DLTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E9B2058F78300F6347A /* DLTabBarItem.m */; };
-		BA189ED8205A4E4C00F6347A /* DLScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189ED7205A4E4C00F6347A /* DLScrollViewController.m */; };
-		BA189EF9205A4E5700F6347A /* DLSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189EDB205A4E5700F6347A /* DLSocketManager.m */; };
+		BA189E962058F74700F6347A /* LDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E942058F74700F6347A /* LDMainTabBarViewController.m */; };
+		BA189E992058F76500F6347A /* LDTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E982058F76500F6347A /* LDTabBarView.m */; };
+		BA189E9C2058F78300F6347A /* LDTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E9B2058F78300F6347A /* LDTabBarItem.m */; };
+		BA189ED8205A4E4C00F6347A /* LDScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189ED7205A4E4C00F6347A /* LDScrollViewController.m */; };
+		BA189EF9205A4E5700F6347A /* LDSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189EDB205A4E5700F6347A /* LDSocketManager.m */; };
 		BA189EFA205A4E5700F6347A /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = BA189EDD205A4E5700F6347A /* Documentation.html */; };
 		BA189EFB205A4E5700F6347A /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189EDE205A4E5700F6347A /* GCDAsyncUdpSocket.m */; };
 		BA189EFC205A4E5700F6347A /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189EDF205A4E5700F6347A /* GCDAsyncSocket.m */; };
@@ -33,16 +33,18 @@
 		BA189F1E205A4F6700F6347A /* LDFileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189F16205A4F6700F6347A /* LDFileListViewController.m */; };
 		BA189F1F205A4F6700F6347A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189F17205A4F6700F6347A /* ViewController.m */; };
 		BA189F20205A4F6700F6347A /* LDDownloadAndUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189F18205A4F6700F6347A /* LDDownloadAndUploadViewController.m */; };
-		BA189F24205A507300F6347A /* DLTestSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189F23205A507300F6347A /* DLTestSocketViewController.m */; };
-		BA1BC6C420D0B61A008BF7FB /* DLStreamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1BC6C320D0B61A008BF7FB /* DLStreamManager.m */; };
+		BA189F24205A507300F6347A /* LDTestSocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189F23205A507300F6347A /* LDTestSocketViewController.m */; };
+		BA1BC6C420D0B61A008BF7FB /* LDStreamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1BC6C320D0B61A008BF7FB /* LDStreamManager.m */; };
 		BA2C7E2821C7A0FC008B46BE /* LDDropMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2721C7A0FC008B46BE /* LDDropMenuView.m */; };
 		BA2C7E2B21C8CECE008B46BE /* LDDropMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2A21C8CECE008B46BE /* LDDropMenuItem.m */; };
 		BA2C7E2E21C8D0B2008B46BE /* LDDropMenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2D21C8D0B2008B46BE /* LDDropMenuItemModel.m */; };
 		BA2C7E3121C911B7008B46BE /* LDDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E3021C911B7008B46BE /* LDDropMenu.m */; };
 		BA5323512201AEA700FD584E /* LDFirstSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323502201AEA700FD584E /* LDFirstSwiftClass.swift */; };
 		BA5323532201B58C00FD584E /* LDFifthSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323522201B58C00FD584E /* LDFifthSwiftViewController.swift */; };
-		BA5F1E7D20B7BCD600C53292 /* DLGCDAnsySocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7C20B7BCD600C53292 /* DLGCDAnsySocketViewController.m */; };
-		BA5F1E8020B7BCEB00C53292 /* DLStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7F20B7BCEB00C53292 /* DLStreamViewController.m */; };
+		BA5323552202AA1600FD584E /* LDBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323542202AA1600FD584E /* LDBaseNavigationController.swift */; };
+		BA53235A2202DD3800FD584E /* LDCutomerTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5323592202DD3800FD584E /* LDCutomerTabBar.m */; };
+		BA5F1E7D20B7BCD600C53292 /* LDGCDAnsySocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7C20B7BCD600C53292 /* LDGCDAnsySocketViewController.m */; };
+		BA5F1E8020B7BCEB00C53292 /* LDStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7F20B7BCEB00C53292 /* LDStreamViewController.m */; };
 		BA854E3621BF5A630063CB9A /* LDCopyTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA854E3521BF5A630063CB9A /* LDCopyTestController.m */; };
 		BA8AC3C22050ECE0001F65B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AC3C12050ECE0001F65B1 /* AppDelegate.m */; };
 		BA8AC3C82050ECE0001F65B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8AC3C62050ECE0001F65B1 /* Main.storyboard */; };
@@ -80,31 +82,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BA03F36F205CF64E009D3CAB /* DLToolMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLToolMenu.h; sourceTree = "<group>"; };
-		BA03F370205CF64E009D3CAB /* DLToolMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLToolMenu.m; sourceTree = "<group>"; };
+		BA03F36F205CF64E009D3CAB /* LDToolMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDToolMenu.h; sourceTree = "<group>"; };
+		BA03F370205CF64E009D3CAB /* LDToolMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDToolMenu.m; sourceTree = "<group>"; };
 		BA03F374205F62AE009D3CAB /* FPSDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSDisplay.h; sourceTree = "<group>"; };
 		BA03F375205F62AE009D3CAB /* FPSDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSDisplay.m; sourceTree = "<group>"; };
 		BA074F602112AC2C0019412A /* LDRuntimeMethodImpController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDRuntimeMethodImpController.h; sourceTree = "<group>"; };
 		BA074F612112AC2C0019412A /* LDRuntimeMethodImpController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDRuntimeMethodImpController.m; sourceTree = "<group>"; };
-		BA074F642112DE7B0019412A /* DLBaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBaseTabBarViewController.h; sourceTree = "<group>"; };
-		BA074F652112DE7B0019412A /* DLBaseTabBarViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DLBaseTabBarViewController.mm; sourceTree = "<group>"; };
+		BA074F642112DE7B0019412A /* LDBaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBaseTabBarViewController.h; sourceTree = "<group>"; };
+		BA074F652112DE7B0019412A /* LDBaseTabBarViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LDBaseTabBarViewController.mm; sourceTree = "<group>"; };
 		BA074F672112DE8E0019412A /* LDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDBaseViewController.h; sourceTree = "<group>"; };
 		BA074F682112DE8E0019412A /* LDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDBaseViewController.m; sourceTree = "<group>"; };
-		BA189E942058F74700F6347A /* DLMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMainTabBarViewController.m; sourceTree = "<group>"; };
-		BA189E952058F74700F6347A /* DLMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMainTabBarViewController.h; sourceTree = "<group>"; };
-		BA189E972058F76500F6347A /* DLTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTabBarView.h; sourceTree = "<group>"; };
-		BA189E982058F76500F6347A /* DLTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTabBarView.m; sourceTree = "<group>"; };
-		BA189E9A2058F78300F6347A /* DLTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTabBarItem.h; sourceTree = "<group>"; };
-		BA189E9B2058F78300F6347A /* DLTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTabBarItem.m; sourceTree = "<group>"; };
-		BA189ED6205A4E4C00F6347A /* DLScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLScrollViewController.h; sourceTree = "<group>"; };
-		BA189ED7205A4E4C00F6347A /* DLScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLScrollViewController.m; sourceTree = "<group>"; };
-		BA189EDB205A4E5700F6347A /* DLSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSocketManager.m; sourceTree = "<group>"; };
+		BA189E942058F74700F6347A /* LDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMainTabBarViewController.m; sourceTree = "<group>"; };
+		BA189E952058F74700F6347A /* LDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMainTabBarViewController.h; sourceTree = "<group>"; };
+		BA189E972058F76500F6347A /* LDTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDTabBarView.h; sourceTree = "<group>"; };
+		BA189E982058F76500F6347A /* LDTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDTabBarView.m; sourceTree = "<group>"; };
+		BA189E9A2058F78300F6347A /* LDTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDTabBarItem.h; sourceTree = "<group>"; };
+		BA189E9B2058F78300F6347A /* LDTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDTabBarItem.m; sourceTree = "<group>"; };
+		BA189ED6205A4E4C00F6347A /* LDScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDScrollViewController.h; sourceTree = "<group>"; };
+		BA189ED7205A4E4C00F6347A /* LDScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDScrollViewController.m; sourceTree = "<group>"; };
+		BA189EDB205A4E5700F6347A /* LDSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSocketManager.m; sourceTree = "<group>"; };
 		BA189EDD205A4E5700F6347A /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
 		BA189EDE205A4E5700F6347A /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		BA189EDF205A4E5700F6347A /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		BA189EE0205A4E5700F6347A /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		BA189EE1205A4E5700F6347A /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
-		BA189EE2205A4E5700F6347A /* DLSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSocketManager.h; sourceTree = "<group>"; };
+		BA189EE2205A4E5700F6347A /* LDSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSocketManager.h; sourceTree = "<group>"; };
 		BA189EE3205A4E5700F6347A /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
 		BA189EE6205A4E5700F6347A /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		BA189EE7205A4E5700F6347A /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
@@ -132,10 +134,10 @@
 		BA189F1A205A4F6700F6347A /* LDFileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDFileListViewController.h; sourceTree = "<group>"; };
 		BA189F1B205A4F6700F6347A /* LDDownloadAndUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDownloadAndUploadViewController.h; sourceTree = "<group>"; };
 		BA189F1C205A4F6700F6347A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BA189F22205A507300F6347A /* DLTestSocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTestSocketViewController.h; sourceTree = "<group>"; };
-		BA189F23205A507300F6347A /* DLTestSocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTestSocketViewController.m; sourceTree = "<group>"; };
-		BA1BC6C220D0B61A008BF7FB /* DLStreamManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLStreamManager.h; sourceTree = "<group>"; };
-		BA1BC6C320D0B61A008BF7FB /* DLStreamManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLStreamManager.m; sourceTree = "<group>"; };
+		BA189F22205A507300F6347A /* LDTestSocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDTestSocketViewController.h; sourceTree = "<group>"; };
+		BA189F23205A507300F6347A /* LDTestSocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDTestSocketViewController.m; sourceTree = "<group>"; };
+		BA1BC6C220D0B61A008BF7FB /* LDStreamManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDStreamManager.h; sourceTree = "<group>"; };
+		BA1BC6C320D0B61A008BF7FB /* LDStreamManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDStreamManager.m; sourceTree = "<group>"; };
 		BA2C7E2621C7A0FC008B46BE /* LDDropMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDropMenuView.h; sourceTree = "<group>"; };
 		BA2C7E2721C7A0FC008B46BE /* LDDropMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenuView.m; sourceTree = "<group>"; };
 		BA2C7E2921C8CECE008B46BE /* LDDropMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDropMenuItem.h; sourceTree = "<group>"; };
@@ -147,10 +149,13 @@
 		BA53234F2201AEA700FD584E /* LittleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA5323502201AEA700FD584E /* LDFirstSwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDFirstSwiftClass.swift; sourceTree = "<group>"; };
 		BA5323522201B58C00FD584E /* LDFifthSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDFifthSwiftViewController.swift; sourceTree = "<group>"; };
-		BA5F1E7B20B7BCD600C53292 /* DLGCDAnsySocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLGCDAnsySocketViewController.h; sourceTree = "<group>"; };
-		BA5F1E7C20B7BCD600C53292 /* DLGCDAnsySocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLGCDAnsySocketViewController.m; sourceTree = "<group>"; };
-		BA5F1E7E20B7BCEB00C53292 /* DLStreamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLStreamViewController.h; sourceTree = "<group>"; };
-		BA5F1E7F20B7BCEB00C53292 /* DLStreamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLStreamViewController.m; sourceTree = "<group>"; };
+		BA5323542202AA1600FD584E /* LDBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDBaseNavigationController.swift; sourceTree = "<group>"; };
+		BA5323582202DD3800FD584E /* LDCutomerTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCutomerTabBar.h; sourceTree = "<group>"; };
+		BA5323592202DD3800FD584E /* LDCutomerTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCutomerTabBar.m; sourceTree = "<group>"; };
+		BA5F1E7B20B7BCD600C53292 /* LDGCDAnsySocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDGCDAnsySocketViewController.h; sourceTree = "<group>"; };
+		BA5F1E7C20B7BCD600C53292 /* LDGCDAnsySocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDGCDAnsySocketViewController.m; sourceTree = "<group>"; };
+		BA5F1E7E20B7BCEB00C53292 /* LDStreamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDStreamViewController.h; sourceTree = "<group>"; };
+		BA5F1E7F20B7BCEB00C53292 /* LDStreamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDStreamViewController.m; sourceTree = "<group>"; };
 		BA854E3421BF5A630063CB9A /* LDCopyTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCopyTestController.h; sourceTree = "<group>"; };
 		BA854E3521BF5A630063CB9A /* LDCopyTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCopyTestController.m; sourceTree = "<group>"; };
 		BA8AC3BD2050ECE0001F65B1 /* LittleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,10 +230,11 @@
 		BA074F632112DE520019412A /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				BA074F642112DE7B0019412A /* DLBaseTabBarViewController.h */,
-				BA074F652112DE7B0019412A /* DLBaseTabBarViewController.mm */,
+				BA074F642112DE7B0019412A /* LDBaseTabBarViewController.h */,
+				BA074F652112DE7B0019412A /* LDBaseTabBarViewController.mm */,
 				BA074F672112DE8E0019412A /* LDBaseViewController.h */,
 				BA074F682112DE8E0019412A /* LDBaseViewController.m */,
+				BA5323542202AA1600FD584E /* LDBaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -245,8 +251,8 @@
 		BA189E922058F6A700F6347A /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				BA189E952058F74700F6347A /* DLMainTabBarViewController.h */,
-				BA189E942058F74700F6347A /* DLMainTabBarViewController.m */,
+				BA189E952058F74700F6347A /* LDMainTabBarViewController.h */,
+				BA189E942058F74700F6347A /* LDMainTabBarViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -254,10 +260,12 @@
 		BA189E932058F6A700F6347A /* view */ = {
 			isa = PBXGroup;
 			children = (
-				BA189E972058F76500F6347A /* DLTabBarView.h */,
-				BA189E982058F76500F6347A /* DLTabBarView.m */,
-				BA189E9A2058F78300F6347A /* DLTabBarItem.h */,
-				BA189E9B2058F78300F6347A /* DLTabBarItem.m */,
+				BA189E972058F76500F6347A /* LDTabBarView.h */,
+				BA189E982058F76500F6347A /* LDTabBarView.m */,
+				BA189E9A2058F78300F6347A /* LDTabBarItem.h */,
+				BA189E9B2058F78300F6347A /* LDTabBarItem.m */,
+				BA5323582202DD3800FD584E /* LDCutomerTabBar.h */,
+				BA5323592202DD3800FD584E /* LDCutomerTabBar.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -268,10 +276,10 @@
 				BA854E3321BF5A450063CB9A /* LDCopyTest */,
 				BAF029A72112A61F00BC626B /* LDRuntimeMethod */,
 				BAF029A2210F3EAB00BC626B /* RequestDependence */,
-				BA03F36F205CF64E009D3CAB /* DLToolMenu.h */,
-				BA03F370205CF64E009D3CAB /* DLToolMenu.m */,
-				BA189ED6205A4E4C00F6347A /* DLScrollViewController.h */,
-				BA189ED7205A4E4C00F6347A /* DLScrollViewController.m */,
+				BA03F36F205CF64E009D3CAB /* LDToolMenu.h */,
+				BA03F370205CF64E009D3CAB /* LDToolMenu.m */,
+				BA189ED6205A4E4C00F6347A /* LDScrollViewController.h */,
+				BA189ED7205A4E4C00F6347A /* LDScrollViewController.m */,
 				BAF0299F210F39E600BC626B /* LDScrollContainerViewController.h */,
 				BAF029A0210F39E600BC626B /* LDScrollContainerViewController.m */,
 			);
@@ -281,8 +289,8 @@
 		BA189ED9205A4E5700F6347A /* Socket */ = {
 			isa = PBXGroup;
 			children = (
-				BA189EE2205A4E5700F6347A /* DLSocketManager.h */,
-				BA189EDB205A4E5700F6347A /* DLSocketManager.m */,
+				BA189EE2205A4E5700F6347A /* LDSocketManager.h */,
+				BA189EDB205A4E5700F6347A /* LDSocketManager.m */,
 				BA189EDA205A4E5700F6347A /* Source */,
 			);
 			path = Socket;
@@ -370,14 +378,14 @@
 		BA189F21205A501100F6347A /* TabthirdSocket */ = {
 			isa = PBXGroup;
 			children = (
-				BA189F22205A507300F6347A /* DLTestSocketViewController.h */,
-				BA189F23205A507300F6347A /* DLTestSocketViewController.m */,
-				BA5F1E7B20B7BCD600C53292 /* DLGCDAnsySocketViewController.h */,
-				BA5F1E7C20B7BCD600C53292 /* DLGCDAnsySocketViewController.m */,
-				BA5F1E7E20B7BCEB00C53292 /* DLStreamViewController.h */,
-				BA5F1E7F20B7BCEB00C53292 /* DLStreamViewController.m */,
-				BA1BC6C220D0B61A008BF7FB /* DLStreamManager.h */,
-				BA1BC6C320D0B61A008BF7FB /* DLStreamManager.m */,
+				BA189F22205A507300F6347A /* LDTestSocketViewController.h */,
+				BA189F23205A507300F6347A /* LDTestSocketViewController.m */,
+				BA5F1E7B20B7BCD600C53292 /* LDGCDAnsySocketViewController.h */,
+				BA5F1E7C20B7BCD600C53292 /* LDGCDAnsySocketViewController.m */,
+				BA5F1E7E20B7BCEB00C53292 /* LDStreamViewController.h */,
+				BA5F1E7F20B7BCEB00C53292 /* LDStreamViewController.m */,
+				BA1BC6C220D0B61A008BF7FB /* LDStreamManager.h */,
+				BA1BC6C320D0B61A008BF7FB /* LDStreamManager.m */,
 			);
 			path = TabthirdSocket;
 			sourceTree = "<group>";
@@ -694,43 +702,45 @@
 				BAF0299E210EEA0500BC626B /* LDMyClass+Category2.m in Sources */,
 				BA2C7E2E21C8D0B2008B46BE /* LDDropMenuItemModel.m in Sources */,
 				BA189F1F205A4F6700F6347A /* ViewController.m in Sources */,
-				BA189ED8205A4E4C00F6347A /* DLScrollViewController.m in Sources */,
+				BA189ED8205A4E4C00F6347A /* LDScrollViewController.m in Sources */,
 				BA189F1D205A4F6700F6347A /* LDCommonCell.m in Sources */,
 				BA189F1E205A4F6700F6347A /* LDFileListViewController.m in Sources */,
 				BA189F00205A4E5700F6347A /* DDDispatchQueueLogFormatter.m in Sources */,
 				BA189EFD205A4E5700F6347A /* DDTTYLogger.m in Sources */,
-				BA189E9C2058F78300F6347A /* DLTabBarItem.m in Sources */,
+				BA189E9C2058F78300F6347A /* LDTabBarItem.m in Sources */,
 				BA189EFC205A4E5700F6347A /* GCDAsyncSocket.m in Sources */,
 				BA189EFF205A4E5700F6347A /* DDContextFilterLogFormatter.m in Sources */,
-				BA189EF9205A4E5700F6347A /* DLSocketManager.m in Sources */,
+				BA189EF9205A4E5700F6347A /* LDSocketManager.m in Sources */,
 				BAF029A5210F3ED500BC626B /* LDRequestDependenceViewController.m in Sources */,
 				BAF029AA2112A62F00BC626B /* LDRuntimeMethodViewController.m in Sources */,
 				BA5323532201B58C00FD584E /* LDFifthSwiftViewController.swift in Sources */,
-				BA074F662112DE7B0019412A /* DLBaseTabBarViewController.mm in Sources */,
+				BA074F662112DE7B0019412A /* LDBaseTabBarViewController.mm in Sources */,
 				BA074F622112AC2C0019412A /* LDRuntimeMethodImpController.m in Sources */,
 				BAF02998210EE9D900BC626B /* LDMyClass.m in Sources */,
 				BA5323512201AEA700FD584E /* LDFirstSwiftClass.swift in Sources */,
 				BA189F01205A4E5700F6347A /* DDMultiFormatter.m in Sources */,
-				BA03F371205CF64E009D3CAB /* DLToolMenu.m in Sources */,
+				BA03F371205CF64E009D3CAB /* LDToolMenu.m in Sources */,
 				BA854E3621BF5A630063CB9A /* LDCopyTestController.m in Sources */,
-				BA5F1E7D20B7BCD600C53292 /* DLGCDAnsySocketViewController.m in Sources */,
-				BA189E962058F74700F6347A /* DLMainTabBarViewController.m in Sources */,
+				BA5F1E7D20B7BCD600C53292 /* LDGCDAnsySocketViewController.m in Sources */,
+				BA189E962058F74700F6347A /* LDMainTabBarViewController.m in Sources */,
 				BA189F05205A4E5700F6347A /* DDFileLogger.m in Sources */,
 				BA189EFE205A4E5700F6347A /* DDASLLogger.m in Sources */,
 				BA189F03205A4E5700F6347A /* DDLog.m in Sources */,
 				BA189F20205A4F6700F6347A /* LDDownloadAndUploadViewController.m in Sources */,
 				BA074F692112DE8E0019412A /* LDBaseViewController.m in Sources */,
-				BA5F1E8020B7BCEB00C53292 /* DLStreamViewController.m in Sources */,
+				BA5F1E8020B7BCEB00C53292 /* LDStreamViewController.m in Sources */,
 				BAF0299B210EE9FA00BC626B /* LDMyClass+Category1.m in Sources */,
 				BA8AC3D02050ECE2001F65B1 /* main.m in Sources */,
 				BAF029A1210F39E600BC626B /* LDScrollContainerViewController.m in Sources */,
-				BA189E992058F76500F6347A /* DLTabBarView.m in Sources */,
+				BA189E992058F76500F6347A /* LDTabBarView.m in Sources */,
 				BA2C7E2821C7A0FC008B46BE /* LDDropMenuView.m in Sources */,
+				BA5323552202AA1600FD584E /* LDBaseNavigationController.swift in Sources */,
 				BA189EFB205A4E5700F6347A /* GCDAsyncUdpSocket.m in Sources */,
 				BA2C7E2B21C8CECE008B46BE /* LDDropMenuItem.m in Sources */,
-				BA1BC6C420D0B61A008BF7FB /* DLStreamManager.m in Sources */,
+				BA1BC6C420D0B61A008BF7FB /* LDStreamManager.m in Sources */,
 				BA2C7E3121C911B7008B46BE /* LDDropMenu.m in Sources */,
-				BA189F24205A507300F6347A /* DLTestSocketViewController.m in Sources */,
+				BA53235A2202DD3800FD584E /* LDCutomerTabBar.m in Sources */,
+				BA189F24205A507300F6347A /* LDTestSocketViewController.m in Sources */,
 				BA189F04205A4E5700F6347A /* DDAbstractDatabaseLogger.m in Sources */,
 				BADBAB49207DF11D0078E103 /* Reachability.m in Sources */,
 				BA8AC3C22050ECE0001F65B1 /* AppDelegate.m in Sources */,

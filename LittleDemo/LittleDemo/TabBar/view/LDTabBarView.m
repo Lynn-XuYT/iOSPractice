@@ -1,18 +1,18 @@
 //
-//  DLTabBarView.m
+//  LDTabBarView.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/14.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLTabBarView.h"
-#import "DLTabBarItem.h"
+#import "LDTabBarView.h"
+#import "LDTabBarItem.h"
 
-@interface DLTabBarView()
-@property (nonatomic, strong) DLTabBarItem *selectedItem;
+@interface LDTabBarView()
+@property (nonatomic, strong) LDTabBarItem *selectedItem;
 @end
-@implementation DLTabBarView
+@implementation LDTabBarView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -23,7 +23,7 @@
     return self;
 }
 
-- (void)setTabBarItems:(NSArray<DLTabBarItem *> *)tabBarItems
+- (void)setTabBarItems:(NSArray<LDTabBarItem *> *)tabBarItems
 {
     if (tabBarItems.count < 1)
     {
@@ -33,7 +33,7 @@
     CGFloat width = CGRectGetWidth(self.frame) / tabBarItems.count;
     CGFloat height = CGRectGetHeight(self.frame);
     for (int i = 0; i< tabBarItems.count; i++) {
-        DLTabBarItem *item = tabBarItems[i];
+        LDTabBarItem *item = tabBarItems[i];
         item.frame = CGRectMake(width * i, 0, width, height);
         item.tag = i;
         if (i % 5 == 2) {
@@ -48,7 +48,7 @@
 
 - (void)touchUpInset:(id)sender
 {
-    DLTabBarItem *item = (DLTabBarItem *)sender;
+    LDTabBarItem *item = (LDTabBarItem *)sender;
     if (self.selectedItem.tag == item.tag)
     {
         return;

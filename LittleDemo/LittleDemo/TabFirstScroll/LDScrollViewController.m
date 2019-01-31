@@ -1,24 +1,24 @@
  //
-//  DLScrollViewController.m
+//  LDScrollViewController.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/12.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLScrollViewController.h"
+#import "LDScrollViewController.h"
 #import "LDScrollContainerViewController.h"
-#import "DLToolMenu.h"
+#import "LDToolMenu.h"
 
 #define statusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
-@interface DLScrollViewController ()<DLToolMenuDelegate,UIScrollViewDelegate>
+@interface LDScrollViewController ()<LDToolMenuDelegate,UIScrollViewDelegate>
 
 @property(nonatomic, strong) NSMutableArray *controllers;
 @property(nonatomic, strong) UIScrollView *scrollView;
-@property(nonatomic, strong) DLToolMenu *menu;
+@property(nonatomic, strong) LDToolMenu *menu;
 @end
 
-@implementation DLScrollViewController
+@implementation LDScrollViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +36,7 @@
     if (!self.menu)
     {
         CGFloat height =  ((UINavigationController *)self.parentViewController).navigationBar.frame.size.height;
-        DLToolMenu *menu = [[DLToolMenu alloc] initWithFrame:CGRectMake(0, statusBarHeight + height, CGRectGetWidth(self.view.frame), 40)];
+        LDToolMenu *menu = [[LDToolMenu alloc] initWithFrame:CGRectMake(0, statusBarHeight + height, CGRectGetWidth(self.view.frame), 40)];
         menu.toolMenuDelegate = self;
         [self.view addSubview:menu];
         self.menu = menu;
@@ -68,7 +68,7 @@
 }
 
 
-#pragma mark - DLToolMenuDelegate
+#pragma mark - LDToolMenuDelegate
 - (void)selectAtIndex:(NSInteger)index
 {
     [self.scrollView scrollRectToVisible:CGRectMake(CGRectGetWidth(self.scrollView.frame) * index, 0, CGRectGetWidth(self.scrollView.frame), CGRectGetHeight(self.scrollView.frame)) animated:NO];

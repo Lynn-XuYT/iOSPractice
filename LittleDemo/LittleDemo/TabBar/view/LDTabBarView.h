@@ -1,5 +1,5 @@
 //
-//  DLTabBarView.h
+//  LDTabBarView.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/14.
@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-@class DLTabBarItem;
+@class LDTabBarItem;
 
-@protocol DLTabBarViewDelegate
+@protocol LDTabBarViewDelegate
 
 - (void)selectedAtIndex:(NSInteger)index;
 @end
 
-@interface DLTabBarView : UIView
+@interface LDTabBarView : UIView
 @property (nonatomic, assign) id delegate;
-@property (nonatomic, strong) NSArray<DLTabBarItem*> *tabBarItems;
+@property (nonatomic, strong) NSArray<LDTabBarItem*> *tabBarItems;
 @end

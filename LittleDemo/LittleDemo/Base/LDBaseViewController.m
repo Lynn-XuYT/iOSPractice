@@ -7,7 +7,7 @@
 //
 
 #import "LDBaseViewController.h"
-
+#import "LDTabBarView.h"
 @interface LDBaseViewController ()
 
 @end
@@ -28,6 +28,16 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

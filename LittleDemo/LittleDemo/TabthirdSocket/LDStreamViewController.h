@@ -1,5 +1,5 @@
 //
-//  DLStreamViewController.h
+//  LDStreamViewController.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/5/25.
@@ -8,6 +8,6 @@
 
 #import "LDBaseViewController.h"
 
-@interface DLStreamViewController : LDBaseViewController
+@interface LDStreamViewController : LDBaseViewController
 
 @end

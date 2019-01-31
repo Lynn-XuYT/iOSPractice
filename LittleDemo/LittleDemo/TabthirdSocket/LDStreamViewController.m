@@ -1,19 +1,19 @@
 //
-//  DLStreamViewController.m
+//  LDStreamViewController.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/5/25.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLStreamViewController.h"
-#import "DLStreamManager.h"
+#import "LDStreamViewController.h"
+#import "LDStreamManager.h"
 
-@interface DLStreamViewController ()
+@interface LDStreamViewController ()
 
 @end
 
-@implementation DLStreamViewController
+@implementation LDStreamViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,7 +31,7 @@
 - (void)ontouched
 {
     
-    [DLStreamManager shareInstance] ;
+    [LDStreamManager shareInstance] ;
 //    NSString * str = @"hahahh";
 //    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
 //    [_ouput write:data.bytes maxLength:data.length];

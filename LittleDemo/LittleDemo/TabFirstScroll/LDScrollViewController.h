@@ -1,5 +1,5 @@
 //
-//  DLScrollViewController.h
+//  LDScrollViewController.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/12.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DLBaseTabBarViewController.h"
+#import "LDBaseTabBarViewController.h"
 
-@interface DLScrollViewController : DLBaseTabBarViewController
+@interface LDScrollViewController : LDBaseTabBarViewController
 
 @end

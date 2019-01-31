@@ -1,5 +1,5 @@
 //
-//  DLToolMenu.h
+//  LDToolMenu.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/13.
@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol DLToolMenuDelegate
+@protocol LDToolMenuDelegate
 
 - (void)selectAtIndex:(NSInteger)index;
 
 @end
 
-@interface DLToolMenu : UIScrollView
+@interface LDToolMenu : UIScrollView
 
 @property (nonatomic, assign) id toolMenuDelegate;
 @property (nonatomic, strong) NSArray<UIViewController *> *dataSource;

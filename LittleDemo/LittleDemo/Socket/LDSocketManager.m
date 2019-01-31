@@ -1,30 +1,30 @@
 //
-//  DLSocketManager.m
+//  LDSocketManager.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/15.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLSocketManager.h"
+#import "LDSocketManager.h"
 
 enum{
     SocketOfflineByLost,// 掉线，默认为0
     SocketOfflineByUser,// 用户主动断开
 };
 
-@interface DLSocketManager()<GCDAsyncSocketDelegate>
+@interface LDSocketManager()<GCDAsyncSocketDelegate>
 
 @end
 
-@implementation DLSocketManager
+@implementation LDSocketManager
 
 + (instancetype)shareInstance
 {
-    static DLSocketManager *sharedInstance;
+    static LDSocketManager *sharedInstance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedInstance = [[DLSocketManager alloc] init];
+        sharedInstance = [[LDSocketManager alloc] init];
     });
     return sharedInstance;
 }

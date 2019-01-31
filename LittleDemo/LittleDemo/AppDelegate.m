@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "DLMainTabBarViewController.h"
-#import "DLScrollViewController.h"
+#import "LDMainTabBarViewController.h"
+#import "LDScrollViewController.h"
 #import "FPSDisplay.h"
 #import "LittleDemo-Swift.h"
 @interface AppDelegate ()
@@ -30,10 +30,10 @@
 //    //显示窗口
 //    [self.window makeKeyAndVisible];
     
-//    UINavigationController *vc1 = [[UINavigationController alloc] initWithRootViewController:[[DLScrollViewController alloc] initWithTittle:nil/*@"主页"*/ imageName:@"icon1.png"]];
+//    UINavigationController *vc1 = [[UINavigationController alloc] initWithRootViewController:[[LDScrollViewController alloc] initWithTittle:nil/*@"主页"*/ imageName:@"icon1.png"]];
 //    UINavigationController *vc2 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithTittle:nil/*@"title"*/ imageName:@"icon2.png"]];
 //    UINavigationController *vc3 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithTittle:nil/*@"我的"*/ imageName:@"icon3.png"]];
-    DLMainTabBarViewController *tabBarController = [[DLMainTabBarViewController alloc] init];
+    LDMainTabBarViewController *tabBarController = [[LDMainTabBarViewController alloc] init];
 //    [tabBarController setViewControllers:@[vc1,vc2,vc3]];
     self.window.rootViewController = tabBarController;
     //显示窗口

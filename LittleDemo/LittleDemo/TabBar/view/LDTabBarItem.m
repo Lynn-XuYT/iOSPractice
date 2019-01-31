@@ -1,21 +1,21 @@
 //
-//  DLTabBarItem.m
+//  LDTabBarItem.m
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/14.
 //  Copyright © 2018年 Lynn. All rights reserved.
 //
 
-#import "DLTabBarItem.h"
+#import "LDTabBarItem.h"
 
-@interface DLTabBarItem()
+@interface LDTabBarItem()
 
 @property (nonatomic, strong) NSString *titleDesp;
 @property (nonatomic, strong) NSString *imageNameNormal;
 @property (nonatomic, strong) NSString *imageNameSelected;
 @end
 
-@implementation DLTabBarItem
+@implementation LDTabBarItem
 
 - (instancetype)initWithTitle:(NSString *)title
               imageNameNormal:(NSString *)imageNameNormal
@@ -35,15 +35,15 @@
 {
     [super layoutSubviews];
     
-    if (self.titleDesp.length > 0)
-    {
-        //top, left, bottom, right
-        [self setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 10, 0)];
-        [self setTitleEdgeInsets:UIEdgeInsetsMake(self.frame.size.height - 10, 0, 0, 0)];
-        
-        [self setTitle:self.titleDesp forState:UIControlStateNormal];
-    }
-    else
+//    if (self.titleDesp.length > 0)
+//    {
+//        //top, left, bottom, right
+//        [self setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 10, 0)];
+//        [self setTitleEdgeInsets:UIEdgeInsetsMake(self.frame.size.height - 10, 0, 0, 0)];
+//
+////        [self setTitle:self.titleDesp forState:UIControlStateNormal];
+//    }
+//    else
     {
         [self setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     }

@@ -1,5 +1,5 @@
 //
-//  DLMainTabBarViewController.h
+//  LDMainTabBarViewController.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/12.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LDBaseTabBarViewController.h"
 
-@interface DLMainTabBarViewController : UITabBarController
+@interface LDMainTabBarViewController : LDBaseTabBarViewController
 
 @end

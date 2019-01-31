@@ -1,5 +1,5 @@
 //
-//  DLSocketManager.h
+//  LDSocketManager.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/15.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CocoaAsyncSocket.h"
 
-@interface DLSocketManager : NSObject
+@interface LDSocketManager : NSObject
 
 @property (nonatomic, strong) GCDAsyncSocket *socket;
 @property (nonatomic, strong) NSString *socketHost;     // ip

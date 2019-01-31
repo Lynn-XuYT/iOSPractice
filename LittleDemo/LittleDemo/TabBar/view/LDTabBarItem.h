@@ -1,5 +1,5 @@
 //
-//  DLTabBarItem.h
+//  LDTabBarItem.h
 //  LittleDemo
 //
 //  Created by Lynn on 2018/3/14.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DLTabBarView.h"
+#import "LDTabBarView.h"
 
-@interface DLTabBarItem : UIButton
+@interface LDTabBarItem : UIButton
 
 @property (nonatomic, assign) id tabBarViewDelegate;
 - (instancetype)initWithTitle:(NSString *)title
