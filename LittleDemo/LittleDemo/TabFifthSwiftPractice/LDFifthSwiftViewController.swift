@@ -12,6 +12,8 @@ import UIKit
 class LDFifthSwiftViewController: UITabBarController {
     let cellID = "cell"
     var dataSource = [String]()
+    let testClass = LDFirstSwiftClass.init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
@@ -56,6 +58,8 @@ extension LDFifthSwiftViewController: UITableViewDataSource, UITableViewDelegate
         let vc = UIViewController.init()
         vc.view.backgroundColor = UIColor.white
         vc.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(vc, animated: true)
+//        self.navigationController?.pushViewController(vc, animated: true)
+        
+        testClass.test()
     }
 }

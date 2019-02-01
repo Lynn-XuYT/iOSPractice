@@ -22,19 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
      [FPSDisplay shareFPSDisplay];
-//    //创建窗口对象
-//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-//    //创建窗口的根控制器，并且赋值
-//    UINavigationController *rootVc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc]init]];
-//    self.window.rootViewController = rootVc;
-//    //显示窗口
-//    [self.window makeKeyAndVisible];
-    
-//    UINavigationController *vc1 = [[UINavigationController alloc] initWithRootViewController:[[LDScrollViewController alloc] initWithTittle:nil/*@"主页"*/ imageName:@"icon1.png"]];
-//    UINavigationController *vc2 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithTittle:nil/*@"title"*/ imageName:@"icon2.png"]];
-//    UINavigationController *vc3 = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithTittle:nil/*@"我的"*/ imageName:@"icon3.png"]];
     LDMainTabBarViewController *tabBarController = [[LDMainTabBarViewController alloc] init];
-//    [tabBarController setViewControllers:@[vc1,vc2,vc3]];
     self.window.rootViewController = tabBarController;
     //显示窗口
     [self.window makeKeyAndVisible];
