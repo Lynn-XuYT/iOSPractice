@@ -60,6 +60,7 @@
 		BA8AD8AB221A8C8000E2DE60 /* Card+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8A7221A8C8000E2DE60 /* Card+CoreDataClass.m */; };
 		BA8AD8AC221A8C8000E2DE60 /* Card+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8A8221A8C8000E2DE60 /* Card+CoreDataProperties.m */; };
 		BA8AD8B0221A8DA800E2DE60 /* LDCoreDataTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8AF221A8DA800E2DE60 /* LDCoreDataTestController.m */; };
+		BA8AD8B8221AE1D000E2DE60 /* LDNSCacheTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8B6221AE1D000E2DE60 /* LDNSCacheTestController.m */; };
 		BACDBCC92058C60B008A4CCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACDBCC82058C60B008A4CCC /* UIKit.framework */; };
 		BADBAB49207DF11D0078E103 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BADBAB47207DF11C0078E103 /* Reachability.m */; };
 		BAF02994210EE8D800BC626B /* PDMidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF02992210EE8D800BC626B /* PDMidViewController.m */; };
@@ -191,6 +192,8 @@
 		BA8AD8A8221A8C8000E2DE60 /* Card+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Card+CoreDataProperties.m"; sourceTree = "<group>"; };
 		BA8AD8AE221A8DA800E2DE60 /* LDCoreDataTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCoreDataTestController.h; sourceTree = "<group>"; };
 		BA8AD8AF221A8DA800E2DE60 /* LDCoreDataTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCoreDataTestController.m; sourceTree = "<group>"; };
+		BA8AD8B6221AE1D000E2DE60 /* LDNSCacheTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNSCacheTestController.m; sourceTree = "<group>"; };
+		BA8AD8B7221AE1D000E2DE60 /* LDNSCacheTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNSCacheTestController.h; sourceTree = "<group>"; };
 		BACDBCC82058C60B008A4CCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BADBAB47207DF11C0078E103 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		BADBAB48207DF11C0078E103 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -293,6 +296,7 @@
 		BA189ED5205A4E4C00F6347A /* TabFirstScroll */ = {
 			isa = PBXGroup;
 			children = (
+				BA8AD8B5221AE1D000E2DE60 /* LDNSCacheTest */,
 				BA8AD8AD221A8D7500E2DE60 /* LDCoreDataTest */,
 				BA854E3321BF5A450063CB9A /* LDCopyTest */,
 				BAF029A72112A61F00BC626B /* LDRuntimeMethod */,
@@ -536,6 +540,15 @@
 			path = LittleDemo/TabFirstScroll/LDCoreDataTest;
 			sourceTree = SOURCE_ROOT;
 		};
+		BA8AD8B5221AE1D000E2DE60 /* LDNSCacheTest */ = {
+			isa = PBXGroup;
+			children = (
+				BA8AD8B7221AE1D000E2DE60 /* LDNSCacheTestController.h */,
+				BA8AD8B6221AE1D000E2DE60 /* LDNSCacheTestController.m */,
+			);
+			path = LDNSCacheTest;
+			sourceTree = "<group>";
+		};
 		BACDBCC72058C60B008A4CCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -758,6 +771,7 @@
 				BA189F1E205A4F6700F6347A /* LDFileListViewController.m in Sources */,
 				BA189F00205A4E5700F6347A /* DDDispatchQueueLogFormatter.m in Sources */,
 				BA189EFD205A4E5700F6347A /* DDTTYLogger.m in Sources */,
+				BA8AD8B8221AE1D000E2DE60 /* LDNSCacheTestController.m in Sources */,
 				BA8AD8AA221A8C8000E2DE60 /* User+CoreDataProperties.m in Sources */,
 				BA189E9C2058F78300F6347A /* LDTabBarItem.m in Sources */,
 				BA189EFC205A4E5700F6347A /* GCDAsyncSocket.m in Sources */,

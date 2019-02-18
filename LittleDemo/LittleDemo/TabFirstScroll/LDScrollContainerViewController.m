@@ -11,6 +11,7 @@
 #import "LDRuntimeMethodViewController.h"
 #import "LDCopyTestController.h"
 #import "LDCoreDataTestController.h"
+#import "LDNSCacheTestController.h"
 
 @interface LDScrollContainerViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -102,8 +103,12 @@
     NSMutableDictionary *mdict4 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
                                    @"CoreData",DescriptionString,
                                    @"LDCoreDataTestController",ActionClass,nil];
+    NSMutableDictionary *mdict5 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                   @"NSCache",DescriptionString,
+                                   @"LDNSCacheTestController",ActionClass,nil];
+    
     self.dataSource = [[NSMutableArray alloc] initWithObjects:
-                       mdict,mdict2,mdict3,mdict4,
+                       mdict,mdict2,mdict3,mdict4,mdict5,
                        nil];
 }
 
