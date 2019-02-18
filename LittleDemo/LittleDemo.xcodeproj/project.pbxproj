@@ -39,6 +39,7 @@
 		BA2C7E2B21C8CECE008B46BE /* LDDropMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2A21C8CECE008B46BE /* LDDropMenuItem.m */; };
 		BA2C7E2E21C8D0B2008B46BE /* LDDropMenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2D21C8D0B2008B46BE /* LDDropMenuItemModel.m */; };
 		BA2C7E3121C911B7008B46BE /* LDDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E3021C911B7008B46BE /* LDDropMenu.m */; };
+		BA3BE9A0221A57820018D6A4 /* LDUserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA3BE99E221A57820018D6A4 /* LDUserModel.xcdatamodeld */; };
 		BA5323512201AEA700FD584E /* LDFirstSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323502201AEA700FD584E /* LDFirstSwiftClass.swift */; };
 		BA5323532201B58C00FD584E /* LDFifthSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323522201B58C00FD584E /* LDFifthSwiftViewController.swift */; };
 		BA5323552202AA1600FD584E /* LDBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323542202AA1600FD584E /* LDBaseNavigationController.swift */; };
@@ -53,6 +54,12 @@
 		BA8AC3D02050ECE2001F65B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AC3CF2050ECE2001F65B1 /* main.m */; };
 		BA8AC3DA2050ECE2001F65B1 /* LittleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AC3D92050ECE2001F65B1 /* LittleDemoTests.m */; };
 		BA8AC3E52050ECE2001F65B1 /* LittleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AC3E42050ECE2001F65B1 /* LittleDemoUITests.m */; };
+		BA8AD888221A842200E2DE60 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8AD887221A842200E2DE60 /* CoreData.framework */; };
+		BA8AD8A9221A8C8000E2DE60 /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8A3221A8C8000E2DE60 /* User+CoreDataClass.m */; };
+		BA8AD8AA221A8C8000E2DE60 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8A4221A8C8000E2DE60 /* User+CoreDataProperties.m */; };
+		BA8AD8AB221A8C8000E2DE60 /* Card+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8A7221A8C8000E2DE60 /* Card+CoreDataClass.m */; };
+		BA8AD8AC221A8C8000E2DE60 /* Card+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8A8221A8C8000E2DE60 /* Card+CoreDataProperties.m */; };
+		BA8AD8B0221A8DA800E2DE60 /* LDCoreDataTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8AF221A8DA800E2DE60 /* LDCoreDataTestController.m */; };
 		BACDBCC92058C60B008A4CCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACDBCC82058C60B008A4CCC /* UIKit.framework */; };
 		BADBAB49207DF11D0078E103 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BADBAB47207DF11C0078E103 /* Reachability.m */; };
 		BAF02994210EE8D800BC626B /* PDMidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF02992210EE8D800BC626B /* PDMidViewController.m */; };
@@ -146,6 +153,7 @@
 		BA2C7E2D21C8D0B2008B46BE /* LDDropMenuItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenuItemModel.m; sourceTree = "<group>"; };
 		BA2C7E2F21C911B7008B46BE /* LDDropMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDropMenu.h; sourceTree = "<group>"; };
 		BA2C7E3021C911B7008B46BE /* LDDropMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenu.m; sourceTree = "<group>"; };
+		BA3BE99F221A57820018D6A4 /* LDUserModel.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = LDUserModel.xcdatamodel; sourceTree = "<group>"; };
 		BA53234F2201AEA700FD584E /* LittleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA5323502201AEA700FD584E /* LDFirstSwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDFirstSwiftClass.swift; sourceTree = "<group>"; };
 		BA5323522201B58C00FD584E /* LDFifthSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDFifthSwiftViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +180,17 @@
 		BA8AC3E02050ECE2001F65B1 /* LittleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8AC3E42050ECE2001F65B1 /* LittleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LittleDemoUITests.m; sourceTree = "<group>"; };
 		BA8AC3E62050ECE2001F65B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA8AD887221A842200E2DE60 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BA8AD8A1221A8C8000E2DE60 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BA8AD8A2221A8C8000E2DE60 /* User+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
+		BA8AD8A3221A8C8000E2DE60 /* User+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
+		BA8AD8A4221A8C8000E2DE60 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BA8AD8A5221A8C8000E2DE60 /* Card+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Card+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BA8AD8A6221A8C8000E2DE60 /* Card+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Card+CoreDataClass.h"; sourceTree = "<group>"; };
+		BA8AD8A7221A8C8000E2DE60 /* Card+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Card+CoreDataClass.m"; sourceTree = "<group>"; };
+		BA8AD8A8221A8C8000E2DE60 /* Card+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Card+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BA8AD8AE221A8DA800E2DE60 /* LDCoreDataTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCoreDataTestController.h; sourceTree = "<group>"; };
+		BA8AD8AF221A8DA800E2DE60 /* LDCoreDataTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCoreDataTestController.m; sourceTree = "<group>"; };
 		BACDBCC82058C60B008A4CCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BADBAB47207DF11C0078E103 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		BADBAB48207DF11C0078E103 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -197,6 +216,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8AD888221A842200E2DE60 /* CoreData.framework in Frameworks */,
 				BACDBCC92058C60B008A4CCC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +293,7 @@
 		BA189ED5205A4E4C00F6347A /* TabFirstScroll */ = {
 			isa = PBXGroup;
 			children = (
+				BA8AD8AD221A8D7500E2DE60 /* LDCoreDataTest */,
 				BA854E3321BF5A450063CB9A /* LDCopyTest */,
 				BAF029A72112A61F00BC626B /* LDRuntimeMethod */,
 				BAF029A2210F3EAB00BC626B /* RequestDependence */,
@@ -405,6 +426,22 @@
 			path = DropMenu;
 			sourceTree = "<group>";
 		};
+		BA3BE99D221A57820018D6A4 /* CoreDataSample */ = {
+			isa = PBXGroup;
+			children = (
+				BA8AD8A1221A8C8000E2DE60 /* User+CoreDataProperties.h */,
+				BA8AD8A2221A8C8000E2DE60 /* User+CoreDataClass.h */,
+				BA8AD8A3221A8C8000E2DE60 /* User+CoreDataClass.m */,
+				BA8AD8A4221A8C8000E2DE60 /* User+CoreDataProperties.m */,
+				BA8AD8A5221A8C8000E2DE60 /* Card+CoreDataProperties.h */,
+				BA8AD8A6221A8C8000E2DE60 /* Card+CoreDataClass.h */,
+				BA8AD8A7221A8C8000E2DE60 /* Card+CoreDataClass.m */,
+				BA8AD8A8221A8C8000E2DE60 /* Card+CoreDataProperties.m */,
+				BA3BE99E221A57820018D6A4 /* LDUserModel.xcdatamodeld */,
+			);
+			path = CoreDataSample;
+			sourceTree = "<group>";
+		};
 		BA53234E2201AE6600FD584E /* TabFifthSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +485,7 @@
 		BA8AC3BF2050ECE0001F65B1 /* LittleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA3BE99D221A57820018D6A4 /* CoreDataSample */,
 				BA074F632112DE520019412A /* Base */,
 				BA189ED5205A4E4C00F6347A /* TabFirstScroll */,
 				BA189F14205A4F6700F6347A /* TabSecondDownAndUp */,
@@ -488,9 +526,20 @@
 			path = LittleDemoUITests;
 			sourceTree = "<group>";
 		};
+		BA8AD8AD221A8D7500E2DE60 /* LDCoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				BA8AD8AE221A8DA800E2DE60 /* LDCoreDataTestController.h */,
+				BA8AD8AF221A8DA800E2DE60 /* LDCoreDataTestController.m */,
+			);
+			name = LDCoreDataTest;
+			path = LittleDemo/TabFirstScroll/LDCoreDataTest;
+			sourceTree = SOURCE_ROOT;
+		};
 		BACDBCC72058C60B008A4CCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA8AD887221A842200E2DE60 /* CoreData.framework */,
 				BACDBCC82058C60B008A4CCC /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -701,12 +750,15 @@
 				BA03F376205F62AE009D3CAB /* FPSDisplay.m in Sources */,
 				BAF0299E210EEA0500BC626B /* LDMyClass+Category2.m in Sources */,
 				BA2C7E2E21C8D0B2008B46BE /* LDDropMenuItemModel.m in Sources */,
+				BA8AD8A9221A8C8000E2DE60 /* User+CoreDataClass.m in Sources */,
+				BA8AD8AB221A8C8000E2DE60 /* Card+CoreDataClass.m in Sources */,
 				BA189F1F205A4F6700F6347A /* ViewController.m in Sources */,
 				BA189ED8205A4E4C00F6347A /* LDScrollViewController.m in Sources */,
 				BA189F1D205A4F6700F6347A /* LDCommonCell.m in Sources */,
 				BA189F1E205A4F6700F6347A /* LDFileListViewController.m in Sources */,
 				BA189F00205A4E5700F6347A /* DDDispatchQueueLogFormatter.m in Sources */,
 				BA189EFD205A4E5700F6347A /* DDTTYLogger.m in Sources */,
+				BA8AD8AA221A8C8000E2DE60 /* User+CoreDataProperties.m in Sources */,
 				BA189E9C2058F78300F6347A /* LDTabBarItem.m in Sources */,
 				BA189EFC205A4E5700F6347A /* GCDAsyncSocket.m in Sources */,
 				BA189EFF205A4E5700F6347A /* DDContextFilterLogFormatter.m in Sources */,
@@ -739,10 +791,13 @@
 				BA2C7E2B21C8CECE008B46BE /* LDDropMenuItem.m in Sources */,
 				BA1BC6C420D0B61A008BF7FB /* LDStreamManager.m in Sources */,
 				BA2C7E3121C911B7008B46BE /* LDDropMenu.m in Sources */,
+				BA8AD8B0221A8DA800E2DE60 /* LDCoreDataTestController.m in Sources */,
 				BA53235A2202DD3800FD584E /* LDCutomerTabBar.m in Sources */,
+				BA3BE9A0221A57820018D6A4 /* LDUserModel.xcdatamodeld in Sources */,
 				BA189F24205A507300F6347A /* LDTestSocketViewController.m in Sources */,
 				BA189F04205A4E5700F6347A /* DDAbstractDatabaseLogger.m in Sources */,
 				BADBAB49207DF11D0078E103 /* Reachability.m in Sources */,
+				BA8AD8AC221A8C8000E2DE60 /* Card+CoreDataProperties.m in Sources */,
 				BA8AC3C22050ECE0001F65B1 /* AppDelegate.m in Sources */,
 				BAF02994210EE8D800BC626B /* PDMidViewController.m in Sources */,
 			);
@@ -1076,6 +1131,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA3BE99E221A57820018D6A4 /* LDUserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA3BE99F221A57820018D6A4 /* LDUserModel.xcdatamodel */,
+			);
+			currentVersion = BA3BE99F221A57820018D6A4 /* LDUserModel.xcdatamodel */;
+			path = LDUserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BA8AC3B52050ECDF001F65B1 /* Project object */;
 }

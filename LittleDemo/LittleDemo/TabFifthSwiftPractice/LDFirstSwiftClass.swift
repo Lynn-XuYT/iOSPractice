@@ -246,6 +246,22 @@ class LDFirstSwiftClass: NSObject {
         dict2[5] = "S5"
     }
     
+    func testFunc(string: String) -> (vowels: Int, consonants: Int, others: Int) {
+        var vowels = 0, consonants = 0, others = 0
+        for character in string {
+            switch (String.init(character)).lowercased() {
+            case "a", "e", "i", "o", "u":
+                vowels+=1
+            case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
+                 "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
+                consonants+=1
+            default:
+                others+=1
+            }
+        }
+        return (vowels, consonants, others)
+    }
+    
     // MARK:
     // String
     func learnString() -> Void {
@@ -264,9 +280,16 @@ class LDFirstSwiftClass: NSObject {
         self.testDictionary()
     }
     
+    // 函数
+    func learnFunc() -> Void {
+        
+        // 多重返回值函数
+    }
+    
     func test() {
 //        self.learnString()
-        self.learnCollectionType()
+//        self.learnCollectionType()
+        self.learnFunc()
     }
 }
 
