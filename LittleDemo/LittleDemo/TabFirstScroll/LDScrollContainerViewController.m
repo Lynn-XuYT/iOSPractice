@@ -12,6 +12,8 @@
 #import "LDCopyTestController.h"
 #import "LDCoreDataTestController.h"
 #import "LDNSCacheTestController.h"
+#import "LDCrashReportController.h"
+#import "LDListViewController.h"
 
 @interface LDScrollContainerViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -106,9 +108,15 @@
     NSMutableDictionary *mdict5 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
                                    @"NSCache",DescriptionString,
                                    @"LDNSCacheTestController",ActionClass,nil];
+    NSMutableDictionary *mdict6 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                   @"Crash上报",DescriptionString,
+                                   @"LDCrashReportController",ActionClass,nil];
+    NSMutableDictionary *mdict7 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                   @"MVVM",DescriptionString,
+                                   @"LDListViewController",ActionClass,nil];
     
     self.dataSource = [[NSMutableArray alloc] initWithObjects:
-                       mdict,mdict2,mdict3,mdict4,mdict5,
+                       mdict,mdict2,mdict3,mdict4,mdict5,mdict6,mdict7,
                        nil];
 }
 

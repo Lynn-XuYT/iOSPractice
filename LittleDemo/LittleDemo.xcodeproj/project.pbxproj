@@ -12,6 +12,7 @@
 		BA074F622112AC2C0019412A /* LDRuntimeMethodImpController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA074F612112AC2C0019412A /* LDRuntimeMethodImpController.m */; };
 		BA074F662112DE7B0019412A /* LDBaseTabBarViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA074F652112DE7B0019412A /* LDBaseTabBarViewController.mm */; };
 		BA074F692112DE8E0019412A /* LDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA074F682112DE8E0019412A /* LDBaseViewController.m */; };
+		BA07A049221C29CE009EE309 /* LDItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA07A048221C29CE009EE309 /* LDItemModel.m */; };
 		BA189E962058F74700F6347A /* LDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E942058F74700F6347A /* LDMainTabBarViewController.m */; };
 		BA189E992058F76500F6347A /* LDTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E982058F76500F6347A /* LDTabBarView.m */; };
 		BA189E9C2058F78300F6347A /* LDTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E9B2058F78300F6347A /* LDTabBarItem.m */; };
@@ -40,6 +41,9 @@
 		BA2C7E2E21C8D0B2008B46BE /* LDDropMenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E2D21C8D0B2008B46BE /* LDDropMenuItemModel.m */; };
 		BA2C7E3121C911B7008B46BE /* LDDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2C7E3021C911B7008B46BE /* LDDropMenu.m */; };
 		BA3BE9A0221A57820018D6A4 /* LDUserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA3BE99E221A57820018D6A4 /* LDUserModel.xcdatamodeld */; };
+		BA40D2C5221C22900074FB2A /* LDListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40D2C4221C22900074FB2A /* LDListViewModel.m */; };
+		BA40D2C8221C23920074FB2A /* LDListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40D2C7221C23920074FB2A /* LDListViewController.m */; };
+		BA4E2283221BA69A0055901A /* LDCrashReportController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4E2282221BA69A0055901A /* LDCrashReportController.m */; };
 		BA5323512201AEA700FD584E /* LDFirstSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323502201AEA700FD584E /* LDFirstSwiftClass.swift */; };
 		BA5323532201B58C00FD584E /* LDFifthSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323522201B58C00FD584E /* LDFifthSwiftViewController.swift */; };
 		BA5323552202AA1600FD584E /* LDBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5323542202AA1600FD584E /* LDBaseNavigationController.swift */; };
@@ -61,6 +65,8 @@
 		BA8AD8AC221A8C8000E2DE60 /* Card+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8A8221A8C8000E2DE60 /* Card+CoreDataProperties.m */; };
 		BA8AD8B0221A8DA800E2DE60 /* LDCoreDataTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8AF221A8DA800E2DE60 /* LDCoreDataTestController.m */; };
 		BA8AD8B8221AE1D000E2DE60 /* LDNSCacheTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AD8B6221AE1D000E2DE60 /* LDNSCacheTestController.m */; };
+		BA951DD0221C2C3000CE5705 /* LDItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA951DCF221C2C3000CE5705 /* LDItemCell.m */; };
+		BAA81C9F221C3914008CDCE9 /* LDItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA81C9E221C3914008CDCE9 /* LDItemViewModel.m */; };
 		BACDBCC92058C60B008A4CCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACDBCC82058C60B008A4CCC /* UIKit.framework */; };
 		BADBAB49207DF11D0078E103 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BADBAB47207DF11C0078E103 /* Reachability.m */; };
 		BAF02994210EE8D800BC626B /* PDMidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF02992210EE8D800BC626B /* PDMidViewController.m */; };
@@ -100,6 +106,8 @@
 		BA074F652112DE7B0019412A /* LDBaseTabBarViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LDBaseTabBarViewController.mm; sourceTree = "<group>"; };
 		BA074F672112DE8E0019412A /* LDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDBaseViewController.h; sourceTree = "<group>"; };
 		BA074F682112DE8E0019412A /* LDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDBaseViewController.m; sourceTree = "<group>"; };
+		BA07A047221C29CE009EE309 /* LDItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDItemModel.h; sourceTree = "<group>"; };
+		BA07A048221C29CE009EE309 /* LDItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDItemModel.m; sourceTree = "<group>"; };
 		BA189E942058F74700F6347A /* LDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMainTabBarViewController.m; sourceTree = "<group>"; };
 		BA189E952058F74700F6347A /* LDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMainTabBarViewController.h; sourceTree = "<group>"; };
 		BA189E972058F76500F6347A /* LDTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDTabBarView.h; sourceTree = "<group>"; };
@@ -155,6 +163,12 @@
 		BA2C7E2F21C911B7008B46BE /* LDDropMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDDropMenu.h; sourceTree = "<group>"; };
 		BA2C7E3021C911B7008B46BE /* LDDropMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDDropMenu.m; sourceTree = "<group>"; };
 		BA3BE99F221A57820018D6A4 /* LDUserModel.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = LDUserModel.xcdatamodel; sourceTree = "<group>"; };
+		BA40D2C3221C22900074FB2A /* LDListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDListViewModel.h; sourceTree = "<group>"; };
+		BA40D2C4221C22900074FB2A /* LDListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDListViewModel.m; sourceTree = "<group>"; };
+		BA40D2C6221C23920074FB2A /* LDListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDListViewController.h; sourceTree = "<group>"; };
+		BA40D2C7221C23920074FB2A /* LDListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDListViewController.m; sourceTree = "<group>"; };
+		BA4E2281221BA69A0055901A /* LDCrashReportController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCrashReportController.h; sourceTree = "<group>"; };
+		BA4E2282221BA69A0055901A /* LDCrashReportController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCrashReportController.m; sourceTree = "<group>"; };
 		BA53234F2201AEA700FD584E /* LittleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		BA5323502201AEA700FD584E /* LDFirstSwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDFirstSwiftClass.swift; sourceTree = "<group>"; };
 		BA5323522201B58C00FD584E /* LDFifthSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDFifthSwiftViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +208,10 @@
 		BA8AD8AF221A8DA800E2DE60 /* LDCoreDataTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCoreDataTestController.m; sourceTree = "<group>"; };
 		BA8AD8B6221AE1D000E2DE60 /* LDNSCacheTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNSCacheTestController.m; sourceTree = "<group>"; };
 		BA8AD8B7221AE1D000E2DE60 /* LDNSCacheTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNSCacheTestController.h; sourceTree = "<group>"; };
+		BA951DCE221C2C3000CE5705 /* LDItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDItemCell.h; sourceTree = "<group>"; };
+		BA951DCF221C2C3000CE5705 /* LDItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDItemCell.m; sourceTree = "<group>"; };
+		BAA81C9D221C3914008CDCE9 /* LDItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDItemViewModel.h; sourceTree = "<group>"; };
+		BAA81C9E221C3914008CDCE9 /* LDItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDItemViewModel.m; sourceTree = "<group>"; };
 		BACDBCC82058C60B008A4CCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BADBAB47207DF11C0078E103 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		BADBAB48207DF11C0078E103 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -296,6 +314,8 @@
 		BA189ED5205A4E4C00F6347A /* TabFirstScroll */ = {
 			isa = PBXGroup;
 			children = (
+				BA4E2284221C08DF0055901A /* LDMVVMTest */,
+				BA8AD8B9221BA45700E2DE60 /* LDCrashReport */,
 				BA8AD8B5221AE1D000E2DE60 /* LDNSCacheTest */,
 				BA8AD8AD221A8D7500E2DE60 /* LDCoreDataTest */,
 				BA854E3321BF5A450063CB9A /* LDCopyTest */,
@@ -446,6 +466,23 @@
 			path = CoreDataSample;
 			sourceTree = "<group>";
 		};
+		BA4E2284221C08DF0055901A /* LDMVVMTest */ = {
+			isa = PBXGroup;
+			children = (
+				BAA81C9D221C3914008CDCE9 /* LDItemViewModel.h */,
+				BAA81C9E221C3914008CDCE9 /* LDItemViewModel.m */,
+				BA40D2C3221C22900074FB2A /* LDListViewModel.h */,
+				BA40D2C4221C22900074FB2A /* LDListViewModel.m */,
+				BA40D2C6221C23920074FB2A /* LDListViewController.h */,
+				BA40D2C7221C23920074FB2A /* LDListViewController.m */,
+				BA07A047221C29CE009EE309 /* LDItemModel.h */,
+				BA07A048221C29CE009EE309 /* LDItemModel.m */,
+				BA951DCE221C2C3000CE5705 /* LDItemCell.h */,
+				BA951DCF221C2C3000CE5705 /* LDItemCell.m */,
+			);
+			path = LDMVVMTest;
+			sourceTree = "<group>";
+		};
 		BA53234E2201AE6600FD584E /* TabFifthSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +584,15 @@
 				BA8AD8B6221AE1D000E2DE60 /* LDNSCacheTestController.m */,
 			);
 			path = LDNSCacheTest;
+			sourceTree = "<group>";
+		};
+		BA8AD8B9221BA45700E2DE60 /* LDCrashReport */ = {
+			isa = PBXGroup;
+			children = (
+				BA4E2281221BA69A0055901A /* LDCrashReportController.h */,
+				BA4E2282221BA69A0055901A /* LDCrashReportController.m */,
+			);
+			path = LDCrashReport;
 			sourceTree = "<group>";
 		};
 		BACDBCC72058C60B008A4CCC /* Frameworks */ = {
@@ -767,6 +813,7 @@
 				BA8AD8AB221A8C8000E2DE60 /* Card+CoreDataClass.m in Sources */,
 				BA189F1F205A4F6700F6347A /* ViewController.m in Sources */,
 				BA189ED8205A4E4C00F6347A /* LDScrollViewController.m in Sources */,
+				BAA81C9F221C3914008CDCE9 /* LDItemViewModel.m in Sources */,
 				BA189F1D205A4F6700F6347A /* LDCommonCell.m in Sources */,
 				BA189F1E205A4F6700F6347A /* LDFileListViewController.m in Sources */,
 				BA189F00205A4E5700F6347A /* DDDispatchQueueLogFormatter.m in Sources */,
@@ -777,13 +824,17 @@
 				BA189EFC205A4E5700F6347A /* GCDAsyncSocket.m in Sources */,
 				BA189EFF205A4E5700F6347A /* DDContextFilterLogFormatter.m in Sources */,
 				BA189EF9205A4E5700F6347A /* LDSocketManager.m in Sources */,
+				BA951DD0221C2C3000CE5705 /* LDItemCell.m in Sources */,
 				BAF029A5210F3ED500BC626B /* LDRequestDependenceViewController.m in Sources */,
 				BAF029AA2112A62F00BC626B /* LDRuntimeMethodViewController.m in Sources */,
 				BA5323532201B58C00FD584E /* LDFifthSwiftViewController.swift in Sources */,
 				BA074F662112DE7B0019412A /* LDBaseTabBarViewController.mm in Sources */,
 				BA074F622112AC2C0019412A /* LDRuntimeMethodImpController.m in Sources */,
+				BA07A049221C29CE009EE309 /* LDItemModel.m in Sources */,
 				BAF02998210EE9D900BC626B /* LDMyClass.m in Sources */,
 				BA5323512201AEA700FD584E /* LDFirstSwiftClass.swift in Sources */,
+				BA40D2C5221C22900074FB2A /* LDListViewModel.m in Sources */,
+				BA40D2C8221C23920074FB2A /* LDListViewController.m in Sources */,
 				BA189F01205A4E5700F6347A /* DDMultiFormatter.m in Sources */,
 				BA03F371205CF64E009D3CAB /* LDToolMenu.m in Sources */,
 				BA854E3621BF5A630063CB9A /* LDCopyTestController.m in Sources */,
@@ -809,6 +860,7 @@
 				BA53235A2202DD3800FD584E /* LDCutomerTabBar.m in Sources */,
 				BA3BE9A0221A57820018D6A4 /* LDUserModel.xcdatamodeld in Sources */,
 				BA189F24205A507300F6347A /* LDTestSocketViewController.m in Sources */,
+				BA4E2283221BA69A0055901A /* LDCrashReportController.m in Sources */,
 				BA189F04205A4E5700F6347A /* DDAbstractDatabaseLogger.m in Sources */,
 				BADBAB49207DF11D0078E103 /* Reachability.m in Sources */,
 				BA8AD8AC221A8C8000E2DE60 /* Card+CoreDataProperties.m in Sources */,
@@ -998,7 +1050,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LittleDemo/TabFifthSwiftPractice/LittleDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				a = "";
 				b = "";
@@ -1024,7 +1076,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LYNN.LittleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LittleDemo/TabFifthSwiftPractice/LittleDemo-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				a = "";
 				b = "";
