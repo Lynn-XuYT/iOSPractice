@@ -12,11 +12,21 @@
 #import "LDScrollViewController.h"
 #import "FPSDisplay.h"
 #import "LittleDemo-Swift.h"
+#import "LDCrashReport.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+void OTHERUncaughtExceptionHandler( NSException * exception)
+{
+    NSArray *arr = [exception callStackSymbols];
+    NSString *reason = [exception reason];
+    NSString *name = [exception name];
+    NSLog(@"===================== \n%@\n%@\n%@\n=====================",arr, reason, name);
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -31,6 +41,13 @@
 //    if(launchOptions[UIApplicationLaunchOptionsURLKey] != nil){
 //        [self application:application handleOpenURL:launchOptions[UIApplicationLaunchOptionsURLKey]];
 //    }
+    
+
+//
+    NSSetUncaughtExceptionHandler(&OTHERUncaughtExceptionHandler);
+    
+    [LDCrashReport setLDCrashReportHandler];
+    
     return YES;
 }
 
@@ -87,6 +104,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end

@@ -303,6 +303,14 @@
     }
     printf("\n*************对比 m_dict 和 [m_dict copy] \n结论：对不可变dict的copy操作，只会copy一份指向字典的指针，没有对其内容的对象进行copy *************\n");
     
+    NSDictionary *dictTmp = [dict copy];
+    printf("dictTmp - %p\n", dictTmp);
+    for (id key in dictTmp) {
+        NSNumber *strKey = (NSNumber*)key;
+        LDCopyTestModel *model = dict[strKey];
+        [self print:model withKey:strKey.intValue];
+    }
+    
     printf("\n----------------------------  m_dict mutableCopy （mdict）\n");
     NSMutableDictionary *mdict = [m_dict mutableCopy];
     printf("mdict - %p - %p\n", mdict, &mdict);

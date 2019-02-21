@@ -13,6 +13,7 @@
 		BA074F662112DE7B0019412A /* LDBaseTabBarViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA074F652112DE7B0019412A /* LDBaseTabBarViewController.mm */; };
 		BA074F692112DE8E0019412A /* LDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA074F682112DE8E0019412A /* LDBaseViewController.m */; };
 		BA07A049221C29CE009EE309 /* LDItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA07A048221C29CE009EE309 /* LDItemModel.m */; };
+		BA0B6BAD221ED28900A1F2F0 /* LDCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0B6BAC221ED28900A1F2F0 /* LDCrashReport.m */; };
 		BA189E962058F74700F6347A /* LDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E942058F74700F6347A /* LDMainTabBarViewController.m */; };
 		BA189E992058F76500F6347A /* LDTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E982058F76500F6347A /* LDTabBarView.m */; };
 		BA189E9C2058F78300F6347A /* LDTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA189E9B2058F78300F6347A /* LDTabBarItem.m */; };
@@ -51,7 +52,7 @@
 		BA5F1E7D20B7BCD600C53292 /* LDGCDAnsySocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7C20B7BCD600C53292 /* LDGCDAnsySocketViewController.m */; };
 		BA5F1E8020B7BCEB00C53292 /* LDStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5F1E7F20B7BCEB00C53292 /* LDStreamViewController.m */; };
 		BA854E3621BF5A630063CB9A /* LDCopyTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA854E3521BF5A630063CB9A /* LDCopyTestController.m */; };
-		BA8AC3C22050ECE0001F65B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8AC3C12050ECE0001F65B1 /* AppDelegate.m */; };
+		BA8AC3C22050ECE0001F65B1 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA8AC3C12050ECE0001F65B1 /* AppDelegate.mm */; };
 		BA8AC3C82050ECE0001F65B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8AC3C62050ECE0001F65B1 /* Main.storyboard */; };
 		BA8AC3CA2050ECE1001F65B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8AC3C92050ECE1001F65B1 /* Assets.xcassets */; };
 		BA8AC3CD2050ECE1001F65B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8AC3CB2050ECE1001F65B1 /* LaunchScreen.storyboard */; };
@@ -108,6 +109,8 @@
 		BA074F682112DE8E0019412A /* LDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDBaseViewController.m; sourceTree = "<group>"; };
 		BA07A047221C29CE009EE309 /* LDItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDItemModel.h; sourceTree = "<group>"; };
 		BA07A048221C29CE009EE309 /* LDItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDItemModel.m; sourceTree = "<group>"; };
+		BA0B6BAB221ED28900A1F2F0 /* LDCrashReport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDCrashReport.h; sourceTree = "<group>"; };
+		BA0B6BAC221ED28900A1F2F0 /* LDCrashReport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCrashReport.m; sourceTree = "<group>"; };
 		BA189E942058F74700F6347A /* LDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMainTabBarViewController.m; sourceTree = "<group>"; };
 		BA189E952058F74700F6347A /* LDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMainTabBarViewController.h; sourceTree = "<group>"; };
 		BA189E972058F76500F6347A /* LDTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDTabBarView.h; sourceTree = "<group>"; };
@@ -183,7 +186,7 @@
 		BA854E3521BF5A630063CB9A /* LDCopyTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDCopyTestController.m; sourceTree = "<group>"; };
 		BA8AC3BD2050ECE0001F65B1 /* LittleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8AC3C02050ECE0001F65B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BA8AC3C12050ECE0001F65B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA8AC3C12050ECE0001F65B1 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		BA8AC3C72050ECE0001F65B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA8AC3C92050ECE1001F65B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA8AC3CC2050ECE1001F65B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -538,7 +541,7 @@
 				BA189ED9205A4E5700F6347A /* Socket */,
 				BA189E912058F6A700F6347A /* TabBar */,
 				BA8AC3C02050ECE0001F65B1 /* AppDelegate.h */,
-				BA8AC3C12050ECE0001F65B1 /* AppDelegate.m */,
+				BA8AC3C12050ECE0001F65B1 /* AppDelegate.mm */,
 				BA8AC3C62050ECE0001F65B1 /* Main.storyboard */,
 				BA8AC3C92050ECE1001F65B1 /* Assets.xcassets */,
 				BA8AC3CB2050ECE1001F65B1 /* LaunchScreen.storyboard */,
@@ -591,6 +594,8 @@
 			children = (
 				BA4E2281221BA69A0055901A /* LDCrashReportController.h */,
 				BA4E2282221BA69A0055901A /* LDCrashReportController.m */,
+				BA0B6BAB221ED28900A1F2F0 /* LDCrashReport.h */,
+				BA0B6BAC221ED28900A1F2F0 /* LDCrashReport.m */,
 			);
 			path = LDCrashReport;
 			sourceTree = "<group>";
@@ -811,6 +816,7 @@
 				BA2C7E2E21C8D0B2008B46BE /* LDDropMenuItemModel.m in Sources */,
 				BA8AD8A9221A8C8000E2DE60 /* User+CoreDataClass.m in Sources */,
 				BA8AD8AB221A8C8000E2DE60 /* Card+CoreDataClass.m in Sources */,
+				BA0B6BAD221ED28900A1F2F0 /* LDCrashReport.m in Sources */,
 				BA189F1F205A4F6700F6347A /* ViewController.m in Sources */,
 				BA189ED8205A4E4C00F6347A /* LDScrollViewController.m in Sources */,
 				BAA81C9F221C3914008CDCE9 /* LDItemViewModel.m in Sources */,
@@ -864,7 +870,7 @@
 				BA189F04205A4E5700F6347A /* DDAbstractDatabaseLogger.m in Sources */,
 				BADBAB49207DF11D0078E103 /* Reachability.m in Sources */,
 				BA8AD8AC221A8C8000E2DE60 /* Card+CoreDataProperties.m in Sources */,
-				BA8AC3C22050ECE0001F65B1 /* AppDelegate.m in Sources */,
+				BA8AC3C22050ECE0001F65B1 /* AppDelegate.mm in Sources */,
 				BAF02994210EE8D800BC626B /* PDMidViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
